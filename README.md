@@ -50,26 +50,33 @@
 
 ---
 
-## 📐 系统架构全景
+## 📐 系统架构全景：双阶段协同流水线 (Two-Stage Pipeline)
+
+`markdown2slide` 确立了严格的**流水线职责分层与关注点分离（Separation of Concerns）**，将长文转 PPT 拆解为两个专业化智能体协同完成：
 
 ```
-[任意 Markdown 长文输入] 
-       │ 
-       ▼
- [ 语义解构与节奏切片 ] (Semantic Chunking)
-       │
-       ▼
- [ 容量密度审计与断点映射 ] (VWS Gauge & CDRD)
-       │
-       ▼
- [ 纯语义网格与卡片装配 ] (Zero-Inline CSS)
-       │
-       ▼
- [ 无头 Chromium 沙盒探针 ] (Headless DOM Measure)
-       │
-       ├── (未溢出) ───────────────────────────┐
-       │                                       ▼
-       └── (检测到溢出) ──> [ 3轮阶梯自愈/拆页 ] ──> [ 高审美精美 Marp 演示母本 ]
+[ 任意 Markdown 长文输入 (技术博客/教材/研报/RFC) ]
+                     │
+═════════════════════╪═════════════════════════════════════════
+【STAGE 1: 上游信息提炼与节奏智能体 (Distiller & Slide Pacer)】
+  • 篇章修辞结构分析 (RST 核部/卫星部提取)
+  • 演说五步认知节拍规划 (Hook ➔ Context ➔ Thesis ➔ DeepDive ➔ Takeaway)
+  • 单页容量硬预算审计 (单页汉字 ≤ 180，列表项 ≤ 4 条)
+  • 意图语义注解注入 (<!-- intention: compare / code / insight -->)
+═════════════════════╪═════════════════════════════════════════
+                     │
+                     ▼ 纯净 Marp 初始草稿 (Zero-HTML / .raw_draft.md)
+                     │
+═════════════════════╪═════════════════════════════════════════
+【STAGE 2: 下游自适应排版与自愈智能体 (Layout & Healing Agent)】
+  • CDRD 容量密度审计与断点映射 (ds-sm ~ ds-xl)
+  • 语义网格与无内联卡片容器装配 (.split-layout / .card.*)
+  • 无头 Chromium 沙盒测量探针 (DOM 几何像素与底部呼吸留白实测)
+  • Max Loops = 3 阶梯降级与强制拆页闭环自愈
+═════════════════════╪═════════════════════════════════════════
+                     │
+                     ▼
+       [ 终极交付：高审美、自适应留白的精美 Marp 演示母本 ]
 ```
 
 - **全景工作流架构图**：详见 [docs/figures/slide_adaptive_pipeline.clean.svg](./docs/figures/slide_adaptive_pipeline.clean.svg)
@@ -88,8 +95,15 @@
 
 ## 📚 详细设计规范文档
 
-详细的算法设计、数学公式推导、设计令牌体系与状态机转换契约，请参阅：
-- 📖 [内容自适应幻灯片编译流水线架构设计与工程规范说明书（方案草稿）](./docs/content_adaptive_slide_pipeline_design.md)
+本项目提供全套出版级架构设计说明书与智能体工程规范：
+
+1. **Stage 1 规范（长文提炼与演说节奏）**：
+   - 📖 [Markdown 长文要点提炼与演示草稿智能体设计规范（方案草稿）](./docs/longform_to_slide_distiller_agent_design.md)
+   - *涵盖：篇章修辞结构理论 (RST)、四大演说原型模式、五步认知演说节奏、单页 180 字容量预算、零 HTML 纯净草稿生成规范与生产级 Prompt。*
+
+2. **Stage 2 规范（自适应排版与沙盒自愈）**：
+   - 📖 [内容自适应幻灯片编译流水线架构设计与工程规范说明书（方案草稿）](./docs/content_adaptive_slide_pipeline_design.md)
+   - *涵盖：CDRD 逆向响应式断点、流体间距双向推导、无内联语义卡片体系、Playwright 无头沙盒探针与 Max Loops = 3 控制论闭环自愈算法。*
 
 ---
 
