@@ -1,0 +1,136 @@
+<svg viewBox="-4 4 613 600" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title id="archify-diagram-title">传统幻灯片排版劣质化与死循环因果链</title>
+        <desc id="archify-diagram-description">由 Archify 生成的工作流图。</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" fill="rgb(148, 163, 184)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" fill="rgb(5, 150, 105)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" fill="rgb(225, 29, 72)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" fill="rgb(124, 58, 237)" stroke="none"/>
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5px" fill="none" stroke="rgb(226, 232, 240)"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(&quot;#grid&quot;)" stroke="none"/>
+
+        <!-- Swimlanes -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="28" y="52" width="557" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="42" y="74" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">01 / 内容创作端 (Authoring Fault)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="28" y="178" width="557" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="42" y="200" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">02 / 视口呈现端 (Viewport Overload)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="28" y="304" width="557" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="42" y="326" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">03 / 开环修补端 (Blind Patching)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-3" x="28" y="430" width="557" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="42" y="452" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">04 / 系统崩塌端 (Quality Collapse)</text>
+
+        <!-- Phase headers -->
+        <line x1="23" y1="35" x2="213" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="33" y="21.6" width="170" height="25.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="118" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段一：职责混乱</text>
+        <line x1="149" y1="35" x2="339" y2="35" class="a-emphasis" stroke-width="1.1px" fill="none" stroke="rgb(5, 150, 105)"/>
+        <rect x="159" y="21.6" width="170" height="25.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="244" y="39" class="t-backend" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段二：视口溢出</text>
+        <line x1="274" y1="35" x2="464" y2="35" class="a-dashed" stroke-width="1.1px" fill="none" stroke="rgb(124, 58, 237)" stroke-dasharray="4px, 4px"/>
+        <rect x="284" y="21.6" width="170" height="25.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="369" y="39" class="t-messagebus" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(234, 88, 12)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段三：暴力修补</text>
+        <line x1="400" y1="35" x2="590" y2="35" class="a-security" stroke-width="1.1px" fill="none" stroke="rgb(225, 29, 72)" stroke-dasharray="5px, 5px"/>
+        <rect x="410" y="21.6" width="170" height="25.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="497.59999999999997" y="39" class="t-security" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段四：恶果爆发</text>
+
+        <!-- Workflow groups -->
+
+
+        <!-- Edge paths -->
+        <path data-edge-from="node_author" data-edge-to="node_overflow" data-edge-label="输入长文粗稿" data-edge-key="0" data-edge-id="e_author_overflow" data-composition-points="48,120;32,120;32,300;243.6,300;243.6,280" d="M 48 120 L 32 120 L 32 300 L 243.6 300 L 243.6 280" class="a-default" data-animate="edge" style="--step:0" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_overflow" data-edge-to="node_patch" data-edge-label="文字冲出底边" data-edge-key="1" data-edge-id="e_overflow_patch" data-composition-points="313.6,246;329.6,246;329.6,294;369.2,294;369.2,338" d="M 313.6 246 L 329.6 246 L 329.6 294 L 369.2 294 L 369.2 338" class="a-emphasis" data-animate="edge" style="--step:1" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="rgb(5, 150, 105)"/>
+        <path data-edge-from="node_patch" data-edge-to="node_collapse" data-edge-label="削足适履压缩" data-edge-key="2" data-edge-id="e_patch_collapse" data-composition-points="369.2,406;369.2,552;494.79999999999995,552;494.79999999999995,532" d="M 369.2 406 L 369.2 552 L 494.79999999999995 552 L 494.79999999999995 532" class="a-security" data-animate="edge" style="--step:2" stroke-width="1.4px" marker-end="url(#arrowhead-security)" fill="none" stroke="rgb(225, 29, 72)" stroke-dasharray="5px, 5px"/>
+
+        <!-- Nodes -->
+        <g id="node-node_author" data-node-id="node_author" data-node-label="职责强行耦合" data-node-kind="external" data-node-sublabel="写教案智能体兼写HTML" data-node-tag="病灶 1：认知超载" data-node-context="内容创作端 (Authoring Fault) › 阶段一：职责混乱">
+          <title>职责强行耦合 · 写教案智能体兼写HTML · 内容创作端 (Authoring Fault) › 阶段一：职责混乱 · 病灶 1：认知超载</title>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">职责强行耦合</text>
+          <text data-detail="context" x="495" y="125.4" class="t-muted" font-size="11.4" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">写教案智能体兼写HTML</text>
+        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">病灶 1：认知超载</text>
+        </g>
+
+        <g id="node-node_overflow" data-node-id="node_overflow" data-node-label="击穿视口预算" data-node-kind="database" data-node-sublabel="单页400字论文长句" data-node-tag="病灶 2：底边截断" data-node-context="视口呈现端 (Viewport Overload) › 阶段二：视口溢出">
+          <title>击穿视口预算 · 单页400字论文长句 · 视口呈现端 (Viewport Overload) › 阶段二：视口溢出 · 病灶 2：底边截断</title>
+          <rect x="173.6" y="212" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="173.6" y="212" width="140" height="68" rx="6" class="c-database" data-animate="node" style="--step:1" stroke-width="1.5px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="243.6" y="233.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">击穿视口预算</text>
+          <text data-detail="context" x="243.6" y="251.4" class="t-muted" font-size="12.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">单页400字论文长句</text>
+        <text data-detail="fine" x="243.6" y="267.8" class="t-database" font-size="11.5" text-anchor="middle" fill="rgb(124, 58, 237)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">病灶 2：底边截断</text>
+        </g>
+
+        <g id="node-node_patch" data-node-id="node_patch" data-node-label="开环暴力打补丁" data-node-kind="frontend" data-node-sublabel="强塞 0.72em 压榨边距" data-node-tag="病灶 3：无反馈猜测" data-node-context="开环修补端 (Blind Patching) › 阶段三：暴力修补">
+          <title>开环暴力打补丁 · 强塞 0.72em 压榨边距 · 开环修补端 (Blind Patching) › 阶段三：暴力修补 · 病灶 3：无反馈猜测</title>
+          <rect x="299.2" y="338" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="299.2" y="338" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:2" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="369.2" y="359.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">开环暴力打补丁</text>
+          <text data-detail="context" x="369.2" y="377.4" class="t-muted" font-size="12.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">强塞 0.72em 压榨边距</text>
+        <text data-detail="fine" x="369.2" y="393.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">病灶 3：无反馈猜测</text>
+        </g>
+
+        <g id="node-node_collapse" data-node-id="node_collapse" data-node-label="系统性劣质化" data-node-kind="cloud" data-node-sublabel="密蚁压扁 / SSOT污染" data-node-tag="病灶 4：死锁恶果" data-node-context="系统崩塌端 (Quality Collapse) › 阶段四：恶果爆发">
+          <title>系统性劣质化 · 密蚁压扁 / SSOT污染 · 系统崩塌端 (Quality Collapse) › 阶段四：恶果爆发 · 病灶 4：死锁恶果</title>
+          <rect x="424.79999999999995" y="464" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="424.79999999999995" y="464" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="494.79999999999995" y="485.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">系统性劣质化</text>
+          <text data-detail="context" x="494.79999999999995" y="503.4" class="t-muted" font-size="12.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">密蚁压扁 / SSOT污染</text>
+        <text data-detail="fine" x="494.79999999999995" y="519.8" class="t-cloud" font-size="11.5" text-anchor="middle" fill="rgb(217, 119, 6)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">病灶 4：死锁恶果</text>
+        </g>
+
+        <!-- Edge labels -->
+        <g data-detail="context" data-edge-from="node_author" data-edge-to="node_overflow" data-edge-label="输入长文粗稿" data-edge-key="0" data-edge-id="e_author_overflow">
+          <rect x="90.3" y="272.6" width="95.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="137.8" y="290" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">输入长文粗稿</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_overflow" data-edge-to="node_patch" data-edge-label="文字冲出底边" data-edge-key="1" data-edge-id="e_overflow_patch">
+          <rect x="301.9" y="266.6" width="95.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(16, 185, 129, 0.14)" stroke="rgba(5, 150, 105, 0.5)" stroke-width="1px"/>
+          <text x="349.4" y="284" class="t-backend" font-size="13" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">文字冲出底边</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_patch" data-edge-to="node_collapse" data-edge-label="削足适履压缩" data-edge-key="2" data-edge-id="e_patch_collapse">
+          <rect x="384.5" y="524.6" width="95.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(244, 63, 94, 0.14)" stroke="rgba(225, 29, 72, 0.5)" stroke-width="1px"/>
+          <text x="432" y="542" class="t-security" font-size="13" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">削足适履压缩</text>
+        </g>
+
+        <!-- Legend -->
+        <g data-legend="" data-legend-bridge="" role="toolbar" aria-label="语义图例">
+          <text x="28" y="560" class="t-primary" font-size="13.5" font-weight="600" fill="rgb(15, 23, 42)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">图例</text>
+          <g data-legend-semantic-kind="frontend" data-legend-kind="frontend" data-legend-label="用户界面" data-legend-x="20" data-legend-baseline="580" data-legend-width="78" data-legend-count="1" role="button" tabindex="0" aria-label="检查用户界面，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="74" y="572" width="14" height="9" rx="2" class="c-frontend" stroke-width="1px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+            <text x="94" y="580" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">用户界面</text>
+          </g>
+          <g data-legend-semantic-kind="database" data-legend-kind="database" data-legend-label="上下文 / 追踪" data-legend-x="105" data-legend-baseline="580" data-legend-width="100" data-legend-count="1" role="button" tabindex="-1" aria-label="检查上下文 / 追踪，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="168" y="572" width="14" height="9" rx="2" class="c-database" stroke-width="1px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+            <text x="188" y="580" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">上下文 / 追踪</text>
+          </g>
+          <g data-legend-semantic-kind="cloud" data-legend-kind="cloud" data-legend-label="云服务" data-legend-x="212" data-legend-baseline="580" data-legend-width="70" data-legend-count="1" role="button" tabindex="-1" aria-label="检查云服务，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="297" y="572" width="14" height="9" rx="2" class="c-cloud" stroke-width="1px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+            <text x="317" y="580" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">云服务</text>
+          </g>
+          <g data-legend-semantic-kind="external" data-legend-kind="external" data-legend-label="外部系统" data-legend-x="289" data-legend-baseline="580" data-legend-width="78" data-legend-count="1" role="button" tabindex="-1" aria-label="检查外部系统，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="379" y="572" width="14" height="9" rx="2" class="c-external" stroke-width="1px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+            <text x="399" y="580" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">外部系统</text>
+          </g>
+        </g>
+      </svg>

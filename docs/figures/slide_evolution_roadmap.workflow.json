@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "内容自适应幻灯片编译架构演进路线图",
+    "locale": "zh-CN",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "roadmap-view",
+        "label": "三大演进阶段与关键工程里程碑",
+        "focus": [
+          "p1_theme",
+          "p1_agent",
+          "p2_sandbox",
+          "p2_loop",
+          "p3_curriculum",
+          "p3_multi"
+        ],
+        "note": "从响应式设计底座起步，历经沙盒自愈工程化，最终达成跨多课程与跨媒介出版的高校教学教材编译体系。"
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "lane_infra", "label": "响应式主题与围栏轨 (Tokens & Guardrails)" },
+    { "id": "lane_agent", "label": "排版智能体与沙盒轨 (Agent & Sandbox)" },
+    { "id": "lane_delivery", "label": "闭环自愈与出版交付轨 (Loop & Delivery)" }
+  ],
+  "phases": [
+    { "id": "phase1", "label": "2026 Q3 (Phase 1: 响应式与后处理接入)", "fromCol": 0, "toCol": 0 },
+    { "id": "phase2", "label": "2026 Q4 (Phase 2: 自动化 Loop 闭环上线)", "fromCol": 1, "toCol": 1, "variant": "emphasis" },
+    { "id": "phase3", "label": "2027 Q1 (Phase 3: 全架构解耦与多端编译)", "fromCol": 2, "toCol": 2, "variant": "dashed" }
+  ],
+  "mainPath": [
+    "p1_theme",
+    "p1_agent",
+    "p2_sandbox",
+    "p3_curriculum",
+    "p3_multi"
+  ],
+  "nodes": [
+    {
+      "id": "p1_theme",
+      "lane": "lane_infra",
+      "col": 0,
+      "type": "cloud",
+      "label": "响应式主题令牌",
+      "sublabel": "ds-sm~xl 断点与流体字号",
+      "tag": "规范底座",
+      "width": 140
+    },
+    {
+      "id": "p1_agent",
+      "lane": "lane_agent",
+      "col": 0,
+      "type": "frontend",
+      "label": "Node 09 后处理接入",
+      "sublabel": "语义卡片与网格映射",
+      "tag": "架构解耦",
+      "width": 140
+    },
+    {
+      "id": "p2_sandbox",
+      "lane": "lane_agent",
+      "col": 1,
+      "type": "database",
+      "label": "无头沙盒几何检测",
+      "sublabel": "Playwright DOM 探针",
+      "tag": "DOM尺寸反馈",
+      "width": 140
+    },
+    {
+      "id": "p2_loop",
+      "lane": "lane_delivery",
+      "col": 1,
+      "type": "backend",
+      "label": "3轮自愈控制器实装",
+      "sublabel": "阶梯降级与自动拆页",
+      "tag": "死锁防御",
+      "width": 140
+    },
+    {
+      "id": "p3_curriculum",
+      "lane": "lane_agent",
+      "col": 2,
+      "type": "frontend",
+      "label": "推广至全院课程",
+      "sublabel": "覆盖16门人机协同课程",
+      "tag": "规模化量产",
+      "width": 140
+    },
+    {
+      "id": "p3_multi",
+      "lane": "lane_delivery",
+      "col": 2,
+      "type": "cloud",
+      "label": "全自动出版流水线",
+      "sublabel": "支持 Marp / Typst 跨端",
+      "tag": "终极形态",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_p1_theme_agent",
+      "from": "p1_theme",
+      "to": "p1_agent",
+      "label": "注入主题样式",
+      "variant": "default"
+    },
+    {
+      "id": "e_p1_to_p2_agent",
+      "from": "p1_agent",
+      "to": "p2_sandbox",
+      "label": "初版接入沙盒",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_p2_sandbox_loop",
+      "from": "p2_sandbox",
+      "to": "p2_loop",
+      "label": "几何探针驱动",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_p2_to_p3_curriculum",
+      "from": "p2_sandbox",
+      "to": "p3_curriculum",
+      "label": "稳定版全院推广",
+      "variant": "default"
+    },
+    {
+      "id": "e_p2_to_p3_delivery",
+      "from": "p2_loop",
+      "to": "p3_multi",
+      "label": "自愈引擎落地",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_p3_curriculum_multi",
+      "from": "p3_curriculum",
+      "to": "p3_multi",
+      "label": "多端教材编译",
+      "variant": "default"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "三大演进阶段的核心攻坚点",
+      "items": [
+        "Phase 1 (2026 Q3): 部署 responsive 主题包，清理历史母本内联样式，接入 Node 09 后处理",
+        "Phase 2 (2026 Q4): 接入无头 Chromium 沙盒探针，实装 3 轮有限状态自愈收敛与拆页熔断",
+        "Phase 3 (2027 Q1): 推广至全院 16 门课程，结合 Typst 编译器实现演示课件与印刷教材双向派生"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "出版级质量门禁指标",
+      "items": [
+        "零内联样式率达到 100%，彻底阻断脏代码侵入 SSOT 母本",
+        "全讲无头沙盒几何溢出率达成 0%，完全杜绝底边缘截断与压扁排版"
+      ]
+    }
+  ]
+}

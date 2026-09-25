@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "内容自适应幻灯片编译与后处理自愈流水线架构",
+    "locale": "zh-CN",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "full-pipeline",
+        "label": "全链路编译与闭环自愈拓扑",
+        "focus": [
+          "raw_draft",
+          "density_auditor",
+          "agent_layout",
+          "theme_engine",
+          "headless_sandbox",
+          "loop_controller",
+          "release_slides"
+        ],
+        "note": "原始粗稿经容量审计与断点调度，在后处理智能体与无头沙盒的闭环回路中自动自愈，最终交付零截断母本。"
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "content_lane", "label": "内容与母本轨 (SSOT Track)" },
+    { "id": "harness_lane", "label": "Harness 静态与预算围栏轨 (Guardrails Track)" },
+    { "id": "agent_lane", "label": "后处理排版智能体轨 (Layout Agent Track)" },
+    { "id": "runtime_lane", "label": "无头渲染与沙盒检测轨 (Headless Sandbox Track)" }
+  ],
+  "phases": [
+    { "id": "phase_ingest", "label": "阶段一：输入与预算审计", "fromCol": 0, "toCol": 1 },
+    { "id": "phase_layout", "label": "阶段二：响应式组件装配", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "phase_verify", "label": "阶段三：沙盒检测", "fromCol": 4, "toCol": 4, "variant": "dashed" },
+    { "id": "phase_release", "label": "阶段四：自愈与交付", "fromCol": 5, "toCol": 5 }
+  ],
+  "groups": [
+    { "id": "grp_agent", "label": "后处理排版引擎 (Node 09 Agent)", "lane": "agent_lane", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "grp_loop", "label": "Loop 闭环自愈中心", "lane": "runtime_lane", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": [
+    "raw_draft",
+    "density_auditor",
+    "agent_layout",
+    "theme_engine",
+    "headless_sandbox",
+    "release_slides"
+  ],
+  "nodes": [
+    {
+      "id": "raw_draft",
+      "lane": "content_lane",
+      "col": 0,
+      "type": "external",
+      "label": "原始 Marp 初稿",
+      "sublabel": "未考虑排版 / 长文粗稿",
+      "tag": "Node 05 产出",
+      "width": 140
+    },
+    {
+      "id": "density_auditor",
+      "lane": "harness_lane",
+      "col": 1,
+      "type": "backend",
+      "label": "容量密度审计器",
+      "sublabel": "计算 VWS 视觉权重得分",
+      "tag": "字符容量卡尺",
+      "width": 140
+    },
+    {
+      "id": "agent_layout",
+      "lane": "agent_lane",
+      "col": 2,
+      "type": "frontend",
+      "label": "断点与语义卡片化",
+      "sublabel": "ds-* / .split-layout / .card",
+      "tag": "Node 09 Agent",
+      "width": 140
+    },
+    {
+      "id": "theme_engine",
+      "lane": "agent_lane",
+      "col": 3,
+      "type": "cloud",
+      "label": "自适应 CSS 引擎",
+      "sublabel": "容器查询 + clamp() 流体",
+      "tag": "slide_responsive",
+      "width": 140
+    },
+    {
+      "id": "headless_sandbox",
+      "lane": "runtime_lane",
+      "col": 4,
+      "type": "database",
+      "label": "无头 Chromium 沙盒",
+      "sublabel": "DOM scrollHeight 测量",
+      "tag": "几何溢出检测",
+      "width": 140
+    },
+    {
+      "id": "loop_controller",
+      "lane": "runtime_lane",
+      "col": 5,
+      "type": "backend",
+      "label": "Loop 闭环控制器",
+      "sublabel": "梯度衰减 / 自动拆页",
+      "tag": "3轮死锁熔断器",
+      "width": 140
+    },
+    {
+      "id": "release_slides",
+      "lane": "content_lane",
+      "col": 5,
+      "type": "backend",
+      "label": "高颜值自适应幻灯片",
+      "sublabel": "零溢出 / 优雅留白 / PDF",
+      "tag": "最终出版物",
+      "width": 140
+    }
+  ],
+  "edges": [
+    { "id": "e_raw_audit", "from": "raw_draft", "to": "density_auditor", "label": "提交初稿", "variant": "default" },
+    { "id": "e_audit_layout", "from": "density_auditor", "to": "agent_layout", "label": "VWS 评估与断点", "variant": "default" },
+    { "id": "e_layout_theme", "from": "agent_layout", "to": "theme_engine", "label": "语义卡片化", "variant": "default" },
+    { "id": "e_theme_sandbox", "from": "theme_engine", "to": "headless_sandbox", "label": "挂载样式渲染", "variant": "emphasis" },
+    { "id": "e_sandbox_release", "from": "headless_sandbox", "to": "release_slides", "label": "零溢出签发", "variant": "emphasis" },
+    { "id": "e_sandbox_loop", "from": "headless_sandbox", "to": "loop_controller", "label": "检测到溢出", "variant": "dashed" },
+    {
+      "id": "e_loop_release",
+      "from": "loop_controller",
+      "to": "release_slides",
+      "label": "自愈拆页签发",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Harness 确定性安全围栏",
+      "items": [
+        "Pre-commit 静态过滤器 100% 拦截 style=\"...\" 与临时 <style scoped>",
+        "字符容量硬指标限制单页汉字 <= 220 字，超标直接阻断"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "HTML 逆向响应式 (CDRD)",
+      "items": [
+        "四档容量密度断点 (ds-sm ~ ds-xl) 自动等比缩放排版",
+        "基于 @container (max-height: 220px) 的卡片自感知紧致降级"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Loop 工程闭环自愈回路",
+      "items": [
+        "测量 -> 评估 -> 梯度降级 -> 结构化自动拆页闭环",
+        "MAX_LOOP=3 熔断机制，保障流水线 100% 幂等收敛，绝不震荡死锁"
+      ]
+    }
+  ]
+}

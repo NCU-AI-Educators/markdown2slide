@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Loop 工程排版闭环控制算法与熔断状态机",
+    "locale": "zh-CN",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "loop-controller-flow",
+        "label": "有限状态排版自愈收敛回路",
+        "focus": [
+          "node_raw",
+          "node_vws",
+          "node_loop0",
+          "node_sandbox",
+          "node_loop1",
+          "node_loop2",
+          "node_release"
+        ],
+        "note": "严格遵循 Max Loops = 3 状态机收敛规则，通过测量-衰减-拆页级联策略杜绝排版死锁。"
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "lane_pipeline", "label": "主干执行与签发轨 (Pipeline & Delivery Track)" },
+    { "id": "lane_loop", "label": "沙盒探针与自愈状态机轨 (Sandbox & Loops Track)" }
+  ],
+  "phases": [
+    { "id": "p_audit", "label": "阶段一：准入与容量审计", "fromCol": 0, "toCol": 1 },
+    { "id": "p_pack", "label": "阶段二：首轮语义重塑", "fromCol": 2, "toCol": 2, "variant": "emphasis" },
+    { "id": "p_measure", "label": "阶段三：沙盒几何测量", "fromCol": 3, "toCol": 3, "variant": "dashed" },
+    { "id": "p_remedy", "label": "阶段四：阶梯自愈衰减", "fromCol": 4, "toCol": 4 },
+    { "id": "p_fuse", "label": "阶段五：拆页熔断与签发", "fromCol": 5, "toCol": 5, "variant": "security" }
+  ],
+  "groups": [
+    { "id": "grp_loops", "label": "自愈动力学闭环 (The Self-Healing Loop)", "lane": "lane_loop", "fromCol": 3, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": [
+    "node_raw",
+    "node_vws",
+    "node_loop0",
+    "node_sandbox",
+    "node_release"
+  ],
+  "nodes": [
+    {
+      "id": "node_raw",
+      "lane": "lane_pipeline",
+      "col": 0,
+      "type": "external",
+      "label": "输入单页初稿",
+      "sublabel": "未排版原始 Markdown",
+      "tag": "输入源",
+      "width": 140
+    },
+    {
+      "id": "node_vws",
+      "lane": "lane_pipeline",
+      "col": 1,
+      "type": "backend",
+      "label": "VWS 容量卡尺审计",
+      "sublabel": "汉字+列表+代码综合得分",
+      "tag": "准入评估",
+      "width": 140
+    },
+    {
+      "id": "node_loop0",
+      "lane": "lane_pipeline",
+      "col": 2,
+      "type": "frontend",
+      "label": "Loop 0: 语义组件包装",
+      "sublabel": "网格映射 + ds-md 断点",
+      "tag": "首轮重塑",
+      "width": 140
+    },
+    {
+      "id": "node_sandbox",
+      "lane": "lane_loop",
+      "col": 3,
+      "type": "database",
+      "label": "无头沙盒几何检测",
+      "sublabel": "scrollHeight <= 720px",
+      "tag": "DOM几何探针",
+      "width": 140
+    },
+    {
+      "id": "node_loop1",
+      "lane": "lane_loop",
+      "col": 4,
+      "type": "cloud",
+      "label": "Loop 1: 阶梯衰减自愈",
+      "sublabel": "ds-lg/xl + @container 紧凑",
+      "tag": "次轮自愈",
+      "width": 140
+    },
+    {
+      "id": "node_loop2",
+      "lane": "lane_loop",
+      "col": 5,
+      "type": "backend",
+      "label": "Loop 2: 强制拆页",
+      "sublabel": "沿标题硬切为双页 ---",
+      "tag": "终极熔断",
+      "width": 140
+    },
+    {
+      "id": "node_release",
+      "lane": "lane_pipeline",
+      "col": 5,
+      "type": "backend",
+      "label": "高审美成品签发",
+      "sublabel": "零截断且留白充裕",
+      "tag": "合规母本",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_raw_vws",
+      "from": "node_raw",
+      "to": "node_vws",
+      "label": "提交初稿",
+      "variant": "default"
+    },
+    {
+      "id": "e_vws_loop0",
+      "from": "node_vws",
+      "to": "node_loop0",
+      "label": "VWS <= 550 (准入)",
+      "variant": "default"
+    },
+    {
+      "id": "e_loop0_sandbox",
+      "from": "node_loop0",
+      "to": "node_sandbox",
+      "label": "提交沙盒初验",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_sandbox_release",
+      "from": "node_sandbox",
+      "to": "node_release",
+      "label": "未溢出直接签发",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_sandbox_loop1",
+      "from": "node_sandbox",
+      "to": "node_loop1",
+      "label": "检测到溢出",
+      "variant": "dashed"
+    },
+    {
+      "id": "e_loop1_loop2",
+      "from": "node_loop1",
+      "to": "node_loop2",
+      "label": "二次沙盒仍溢出",
+      "variant": "dashed"
+    },
+    {
+      "id": "e_loop2_release",
+      "from": "node_loop2",
+      "to": "node_release",
+      "label": "双页优雅签发",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "有限状态收敛保障 (Max Loops = 3)",
+      "items": [
+        "Loop 0: 保留默认字号，注入纯语义网格与基础卡片",
+        "Loop 1: 调度密集断点 (ds-lg/xl)，启动容器查询缩减间距并微修辅助文案",
+        "Loop 2: 坚决拒绝 0.72em 暴力压扁，规范切分为双页独立签发"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "熔断保护与死锁防御",
+      "items": [
+        "若初始 VWS > 550，系统前置判定内容严重超限，跳过 Loop 0/1 直接执行拆页",
+        "严禁超过 3 次循环，彻底终结人工反复折腾与大模型震荡死锁"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "传统幻灯片排版劣质化与死循环因果链",
+    "locale": "zh-CN",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "antipattern-flow",
+        "label": "传统排版死循环病灶链路",
+        "focus": [
+          "node_author",
+          "node_overflow",
+          "node_patch",
+          "node_collapse"
+        ],
+        "note": "解构传统流程中因上游职责强耦合与缺乏几何闭环，最终导致幻灯片压扁与SSOT污染的劣质化机理。"
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "lane_author", "label": "内容创作端 (Authoring Fault)" },
+    { "id": "lane_render", "label": "视口呈现端 (Viewport Overload)" },
+    { "id": "lane_patch", "label": "开环修补端 (Blind Patching)" },
+    { "id": "lane_outcome", "label": "系统崩塌端 (Quality Collapse)" }
+  ],
+  "phases": [
+    { "id": "p_input", "label": "阶段一：职责混乱", "fromCol": 0, "toCol": 0 },
+    { "id": "p_overflow", "label": "阶段二：视口溢出", "fromCol": 1, "toCol": 1, "variant": "emphasis" },
+    { "id": "p_patch", "label": "阶段三：暴力修补", "fromCol": 2, "toCol": 2, "variant": "dashed" },
+    { "id": "p_collapse", "label": "阶段四：恶果爆发", "fromCol": 3, "toCol": 3, "variant": "security" }
+  ],
+  "mainPath": [
+    "node_author",
+    "node_overflow",
+    "node_patch",
+    "node_collapse"
+  ],
+  "nodes": [
+    {
+      "id": "node_author",
+      "lane": "lane_author",
+      "col": 0,
+      "type": "external",
+      "label": "职责强行耦合",
+      "sublabel": "写教案智能体兼写HTML",
+      "tag": "病灶 1：认知超载",
+      "width": 140
+    },
+    {
+      "id": "node_overflow",
+      "lane": "lane_render",
+      "col": 1,
+      "type": "database",
+      "label": "击穿视口预算",
+      "sublabel": "单页400字论文长句",
+      "tag": "病灶 2：底边截断",
+      "width": 140
+    },
+    {
+      "id": "node_patch",
+      "lane": "lane_patch",
+      "col": 2,
+      "type": "frontend",
+      "label": "开环暴力打补丁",
+      "sublabel": "强塞 0.72em 压榨边距",
+      "tag": "病灶 3：无反馈猜测",
+      "width": 140
+    },
+    {
+      "id": "node_collapse",
+      "lane": "lane_outcome",
+      "col": 3,
+      "type": "cloud",
+      "label": "系统性劣质化",
+      "sublabel": "密蚁压扁 / SSOT污染",
+      "tag": "病灶 4：死锁恶果",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_author_overflow",
+      "from": "node_author",
+      "to": "node_overflow",
+      "label": "输入长文粗稿",
+      "variant": "default"
+    },
+    {
+      "id": "e_overflow_patch",
+      "from": "node_overflow",
+      "to": "node_patch",
+      "label": "文字冲出底边",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e_patch_collapse",
+      "from": "node_patch",
+      "to": "node_collapse",
+      "label": "削足适履压缩",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "传统开环模式的致命死穴",
+      "items": [
+        "上游内容创作者无视 720px 视口垂直边界，单页信息密度严重超标",
+        "大模型在无几何反馈下盲目猜测字体与边距，造成字号忽大忽小"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "单一事实源 (SSOT) 彻底污染",
+      "items": [
+        "大量侵入 style=\"...\" 内联标签破坏 Markdown 纯度",
+        "专有样式污染导致无法直接派生 A4 讲义与 Typst 印刷源"
+      ]
+    }
+  ]
+}

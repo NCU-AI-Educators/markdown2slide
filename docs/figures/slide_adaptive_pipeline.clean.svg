@@ -1,0 +1,193 @@
+<svg viewBox="-4 4 1059 617" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title id="archify-diagram-title">内容自适应幻灯片编译与后处理自愈流水线架构</title>
+        <desc id="archify-diagram-description">由 Archify 生成的工作流图。</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" fill="rgb(148, 163, 184)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" fill="rgb(5, 150, 105)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" fill="rgb(225, 29, 72)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" fill="rgb(124, 58, 237)" stroke="none"/>
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5px" fill="none" stroke="rgb(226, 232, 240)"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(&quot;#grid&quot;)" stroke="none"/>
+
+        <!-- Swimlanes -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="932" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="74" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">01 / 内容与母本轨 (SSOT Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="932" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="200" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">02 / Harness 静态与预算围栏轨 (Guardrails Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="932" height="114" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="326" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">03 / 后处理排版智能体轨 (Layout Agent Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-3" x="40" y="438" width="932" height="114" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="460" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">04 / 无头渲染与沙盒检测轨 (Headless Sandbox Track)</text>
+
+        <!-- Phase headers -->
+        <line x1="72" y1="35" x2="284" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="93.5" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="178" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段一：输入与预算审计</text>
+        <line x1="312" y1="35" x2="610" y2="35" class="a-emphasis" stroke-width="1.1px" fill="none" stroke="rgb(5, 150, 105)"/>
+        <rect x="376.5" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="461" y="39" class="t-backend" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段二：响应式组件装配</text>
+        <line x1="638" y1="35" x2="735.6" y2="35" class="a-dashed" stroke-width="1.1px" fill="none" stroke="rgb(124, 58, 237)" stroke-dasharray="4px, 4px"/>
+        <rect x="622.8" y="21.1" width="128.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="686.8" y="39" class="t-messagebus" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(234, 88, 12)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段三：沙盒检测</text>
+        <line x1="844" y1="35" x2="952.8" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="827.4" y="21.1" width="142.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="898.4" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段四：自愈与交付</text>
+
+        <!-- Workflow groups -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-0" x="284" y="342" width="354" height="72" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="294" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">后处理排版引擎 (Node 09 Agent)</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-1" x="610" y="476" width="354" height="72" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="620" y="474" class="t-messagebus" font-size="13.5" font-weight="600" fill="rgb(234, 88, 12)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">Loop 闭环自愈中心</text>
+
+        <!-- Edge paths -->
+        <path data-edge-from="density_auditor" data-edge-to="agent_layout" data-edge-label="VWS 评估与断点" data-edge-key="0" data-edge-id="e_audit_layout" data-composition-points="168,246;20,246;20,379;288,379" d="M 168 246 L 20 246 L 20 379 L 288 379" class="a-default" data-animate="edge" style="--step:1" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="agent_layout" data-edge-to="theme_engine" data-edge-label="语义卡片化" data-edge-key="1" data-edge-id="e_layout_theme" data-composition-points="428,379;494,379" d="M 428 379 L 494 379" class="a-default" data-animate="edge" style="--step:2" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="loop_controller" data-edge-to="release_slides" data-edge-label="自愈拆页签发" data-edge-key="2" data-edge-id="e_loop_release" data-composition-points="960,513;1023.6,513;1023.6,120;960,120" d="M 960 513 L 1023.6 513 L 1023.6 120 L 960 120" class="a-emphasis" data-animate="edge" style="--step:8" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="rgb(5, 150, 105)"/>
+        <path data-edge-from="raw_draft" data-edge-to="density_auditor" data-edge-label="提交初稿" data-edge-key="3" data-edge-id="e_raw_audit" data-composition-points="48,120;32,120;32,300;238,300;238,280" d="M 48 120 L 32 120 L 32 300 L 238 300 L 238 280" class="a-default" data-animate="edge" style="--step:0" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="headless_sandbox" data-edge-to="loop_controller" data-edge-label="检测到溢出" data-edge-key="4" data-edge-id="e_sandbox_loop" data-composition-points="684,547;684,563;890,563;890,547" d="M 684 547 L 684 563 L 890 563 L 890 547" class="a-dashed" data-animate="edge" style="--step:10" stroke-width="1.4px" marker-end="url(#arrowhead-dashed)" fill="none" stroke="rgb(124, 58, 237)" stroke-dasharray="4px, 4px"/>
+        <path data-edge-from="headless_sandbox" data-edge-to="release_slides" data-edge-label="零溢出签发" data-edge-key="5" data-edge-id="e_sandbox_release" data-composition-points="754,506;770,506;770,302;883,302;883,154" d="M 754 506 L 770 506 L 770 302 L 883 302 L 883 154" class="a-emphasis" data-animate="edge" style="--step:4" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="rgb(5, 150, 105)"/>
+        <path data-edge-from="theme_engine" data-edge-to="headless_sandbox" data-edge-label="挂载样式渲染" data-edge-key="6" data-edge-id="e_theme_sandbox" data-composition-points="564,413;564,568;684,568;684,547" d="M 564 413 L 564 568 L 684 568 L 684 547" class="a-emphasis" data-animate="edge" style="--step:3" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="rgb(5, 150, 105)"/>
+
+        <!-- Nodes -->
+        <g id="node-raw_draft" data-node-id="raw_draft" data-node-label="原始 Marp 初稿" data-node-kind="external" data-node-sublabel="未考虑排版 / 长文粗稿" data-node-tag="Node 05 产出" data-node-context="内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计">
+          <title>原始 Marp 初稿 · 未考虑排版 / 长文粗稿 · 内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计 · Node 05 产出</title>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">原始 Marp 初稿</text>
+          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="12.1" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">未考虑排版 / 长文粗稿</text>
+        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Node 05 产出</text>
+        </g>
+
+        <g id="node-release_slides" data-node-id="release_slides" data-node-label="高颜值自适应幻灯片" data-node-kind="backend" data-node-sublabel="零溢出 / 优雅留白 / PDF" data-node-tag="最终出版物" data-node-context="内容与母本轨 (SSOT Track) › 阶段四：自愈与交付">
+          <title>高颜值自适应幻灯片 · 零溢出 / 优雅留白 / PDF · 内容与母本轨 (SSOT Track) › 阶段四：自愈与交付 · 最终出版物</title>
+          <rect x="820" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="820" y="86" width="140" height="68" rx="6" class="c-backend" data-animate="node" style="--step:5" stroke-width="1.5px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="890" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">高颜值自适应幻灯片</text>
+          <text data-detail="context" x="890" y="125.4" class="t-muted" font-size="10.9" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">零溢出 / 优雅留白 / PDF</text>
+        <text data-detail="fine" x="890" y="141.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">最终出版物</text>
+        </g>
+
+        <g id="node-density_auditor" data-node-id="density_auditor" data-node-label="容量密度审计器" data-node-kind="backend" data-node-sublabel="计算 VWS 视觉权重得分" data-node-tag="字符容量卡尺" data-node-context="Harness 静态与预算围栏轨 (Guardrails Track) › 阶段一：输入与预算审计">
+          <title>容量密度审计器 · 计算 VWS 视觉权重得分 · Harness 静态与预算围栏轨 (Guardrails Track) › 阶段一：输入与预算审计 · 字符容量卡尺</title>
+          <rect x="168" y="212" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="168" y="212" width="140" height="68" rx="6" class="c-backend" data-animate="node" style="--step:1" stroke-width="1.5px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="238" y="233.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">容量密度审计器</text>
+          <text data-detail="context" x="238" y="251.4" class="t-muted" font-size="11.3" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">计算 VWS 视觉权重得分</text>
+        <text data-detail="fine" x="238" y="267.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">字符容量卡尺</text>
+        </g>
+
+        <g id="node-agent_layout" data-node-id="agent_layout" data-node-label="断点与语义卡片化" data-node-kind="frontend" data-node-sublabel="ds-* / .split-layout / .card" data-node-tag="Node 09 Agent" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配">
+          <title>断点与语义卡片化 · ds-* / .split-layout / .card · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配 · Node 09 Agent</title>
+          <rect x="288" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="288" y="345" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:2" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="358" y="366.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">断点与语义卡片化</text>
+          <text data-detail="context" x="358" y="384.4" class="t-muted" font-size="9.7" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">ds-* / .split-layout / .card</text>
+        <text data-detail="fine" x="358" y="400.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Node 09 Agent</text>
+        </g>
+
+        <g id="node-theme_engine" data-node-id="theme_engine" data-node-label="自适应 CSS 引擎" data-node-kind="cloud" data-node-sublabel="容器查询 + clamp() 流体" data-node-tag="slide_responsive" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配">
+          <title>自适应 CSS 引擎 · 容器查询 + clamp() 流体 · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配 · slide_responsive</title>
+          <rect x="494" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="494" y="345" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="564" y="366.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">自适应 CSS 引擎</text>
+          <text data-detail="context" x="564" y="384.4" class="t-muted" font-size="11.1" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">容器查询 + clamp() 流体</text>
+        <text data-detail="fine" x="564" y="400.8" class="t-cloud" font-size="11.5" text-anchor="middle" fill="rgb(217, 119, 6)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">slide_responsive</text>
+        </g>
+
+        <g id="node-headless_sandbox" data-node-id="headless_sandbox" data-node-label="无头 Chromium 沙盒" data-node-kind="database" data-node-sublabel="DOM scrollHeight 测量" data-node-tag="几何溢出检测" data-node-context="无头渲染与沙盒检测轨 (Headless Sandbox Track) › Loop 闭环自愈中心 › 阶段三：沙盒检测">
+          <title>无头 Chromium 沙盒 · DOM scrollHeight 测量 · 无头渲染与沙盒检测轨 (Headless Sandbox Track) › Loop 闭环自愈中心 › 阶段三：沙盒检测 · 几何溢出检测</title>
+          <rect x="614" y="479" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="614" y="479" width="140" height="68" rx="6" class="c-database" data-animate="node" style="--step:4" stroke-width="1.5px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="684" y="500.8" class="t-primary" font-size="12.9" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">无头 Chromium 沙盒</text>
+          <text data-detail="context" x="684" y="518.4" class="t-muted" font-size="11.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">DOM scrollHeight 测量</text>
+        <text data-detail="fine" x="684" y="534.8" class="t-database" font-size="11.5" text-anchor="middle" fill="rgb(124, 58, 237)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">几何溢出检测</text>
+        </g>
+
+        <g id="node-loop_controller" data-node-id="loop_controller" data-node-label="Loop 闭环控制器" data-node-kind="backend" data-node-sublabel="梯度衰减 / 自动拆页" data-node-tag="3轮死锁熔断器" data-node-context="无头渲染与沙盒检测轨 (Headless Sandbox Track) › Loop 闭环自愈中心 › 阶段四：自愈与交付">
+          <title>Loop 闭环控制器 · 梯度衰减 / 自动拆页 · 无头渲染与沙盒检测轨 (Headless Sandbox Track) › Loop 闭环自愈中心 › 阶段四：自愈与交付 · 3轮死锁熔断器</title>
+          <rect x="820" y="479" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="820" y="479" width="140" height="68" rx="6" class="c-backend" data-animate="node" style="--step:12" stroke-width="1.5px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="890" y="500.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">Loop 闭环控制器</text>
+          <text data-detail="context" x="890" y="518.4" class="t-muted" font-size="12.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">梯度衰减 / 自动拆页</text>
+        <text data-detail="fine" x="890" y="534.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">3轮死锁熔断器</text>
+        </g>
+
+        <!-- Edge labels -->
+        <g data-detail="context" data-edge-from="density_auditor" data-edge-to="agent_layout" data-edge-label="VWS 评估与断点" data-edge-key="0" data-edge-id="e_audit_layout">
+          <rect x="96.5" y="352.9" width="115.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="154" y="369" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">VWS 评估与断点</text>
+        </g>
+        <g data-detail="context" data-edge-from="agent_layout" data-edge-to="theme_engine" data-edge-label="语义卡片化" data-edge-key="1" data-edge-id="e_layout_theme">
+          <rect x="420.5" y="352.9" width="81.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="461" y="369" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">语义卡片化</text>
+        </g>
+        <g data-detail="context" data-edge-from="loop_controller" data-edge-to="release_slides" data-edge-label="自愈拆页签发" data-edge-key="2" data-edge-id="e_loop_release">
+          <rect x="944.8" y="486.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(16, 185, 129, 0.14)" stroke="rgba(5, 150, 105, 0.5)" stroke-width="1px"/>
+          <text x="991.8" y="503" class="t-backend" font-size="13" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">自愈拆页签发</text>
+        </g>
+        <g data-detail="context" data-edge-from="raw_draft" data-edge-to="density_auditor" data-edge-label="提交初稿" data-edge-key="3" data-edge-id="e_raw_audit">
+          <rect x="101.0" y="273.9" width="68.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="135" y="290" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">提交初稿</text>
+        </g>
+        <g data-detail="context" data-edge-from="headless_sandbox" data-edge-to="loop_controller" data-edge-label="检测到溢出" data-edge-key="4" data-edge-id="e_sandbox_loop">
+          <rect x="746.5" y="536.9" width="81.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(124, 58, 237, 0.14)" stroke="rgba(124, 58, 237, 0.5)" stroke-width="1px"/>
+          <text x="787" y="553" class="t-database" font-size="13" text-anchor="middle" fill="rgb(124, 58, 237)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">检测到溢出</text>
+        </g>
+        <g data-detail="context" data-edge-from="headless_sandbox" data-edge-to="release_slides" data-edge-label="零溢出签发" data-edge-key="5" data-edge-id="e_sandbox_release">
+          <rect x="786.0" y="275.9" width="81.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(16, 185, 129, 0.14)" stroke="rgba(5, 150, 105, 0.5)" stroke-width="1px"/>
+          <text x="826.5" y="292" class="t-backend" font-size="13" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">零溢出签发</text>
+        </g>
+        <g data-detail="context" data-edge-from="theme_engine" data-edge-to="headless_sandbox" data-edge-label="挂载样式渲染" data-edge-key="6" data-edge-id="e_theme_sandbox">
+          <rect x="577.0" y="541.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(16, 185, 129, 0.14)" stroke="rgba(5, 150, 105, 0.5)" stroke-width="1px"/>
+          <text x="624" y="558" class="t-backend" font-size="13" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">挂载样式渲染</text>
+        </g>
+
+        <!-- Legend -->
+        <g data-legend="" data-legend-bridge="" role="toolbar" aria-label="语义图例">
+          <text x="20" y="576" class="t-primary" font-size="13.5" font-weight="600" fill="rgb(15, 23, 42)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">图例</text>
+          <g data-legend-semantic-kind="frontend" data-legend-kind="frontend" data-legend-label="用户界面" data-legend-x="20" data-legend-baseline="596" data-legend-width="78" data-legend-count="1" role="button" tabindex="0" aria-label="检查用户界面，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="20" y="588" width="14" height="9" rx="2" class="c-frontend" stroke-width="1px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+            <text x="42" y="596" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">用户界面</text>
+          </g>
+          <g data-legend-semantic-kind="backend" data-legend-kind="backend" data-legend-label="Agent 逻辑" data-legend-x="105" data-legend-baseline="596" data-legend-width="87" data-legend-count="3" role="button" tabindex="-1" aria-label="检查Agent 逻辑，3 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="105" y="588" width="14" height="9" rx="2" class="c-backend" stroke-width="1px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+            <text x="127" y="596" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">Agent 逻辑</text>
+          </g>
+          <g data-legend-semantic-kind="database" data-legend-kind="database" data-legend-label="上下文 / 追踪" data-legend-x="199" data-legend-baseline="596" data-legend-width="100" data-legend-count="1" role="button" tabindex="-1" aria-label="检查上下文 / 追踪，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="199" y="588" width="14" height="9" rx="2" class="c-database" stroke-width="1px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+            <text x="221" y="596" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">上下文 / 追踪</text>
+          </g>
+          <g data-legend-semantic-kind="cloud" data-legend-kind="cloud" data-legend-label="云服务" data-legend-x="306" data-legend-baseline="596" data-legend-width="70" data-legend-count="1" role="button" tabindex="-1" aria-label="检查云服务，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="306" y="588" width="14" height="9" rx="2" class="c-cloud" stroke-width="1px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+            <text x="328" y="596" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">云服务</text>
+          </g>
+          <g data-legend-semantic-kind="external" data-legend-kind="external" data-legend-label="外部系统" data-legend-x="383" data-legend-baseline="596" data-legend-width="78" data-legend-count="1" role="button" tabindex="-1" aria-label="检查外部系统，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="383" y="588" width="14" height="9" rx="2" class="c-external" stroke-width="1px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+            <text x="405" y="596" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">外部系统</text>
+          </g>
+        </g>
+      </svg>
