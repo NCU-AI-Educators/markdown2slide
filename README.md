@@ -60,7 +60,7 @@
 ═════════════════════╪═════════════════════════════════════════
 【STAGE 1: 上游信息提炼与节奏智能体 (Distiller & Slide Pacer)】
   • 篇章修辞结构分析 (RST 核部/卫星部提取)
-  • 演说五步认知节拍规划 (Hook ➔ Context ➔ Thesis ➔ DeepDive ➔ Takeaway)
+  • 演说五步认知节奏规划 (Hook ➔ Context ➔ Thesis ➔ DeepDive ➔ Takeaway)
   • 单页容量硬预算审计 (单页汉字 ≤ 180，列表项 ≤ 4 条)
   • 意图语义注解注入 (<!-- intention: compare / code / insight -->)
 ═════════════════════╪═════════════════════════════════════════
@@ -81,8 +81,8 @@
 
 - **全景编译流水线架构说明**：详见 [Stage 2 自适应排版规范说明书](./docs/content_adaptive_slide_pipeline_design.md#3-后处理排版智能体slide-layout-agent系统架构)
 - **自愈状态机算法模型**：详见 [Stage 2 自适应排版规范说明书](./docs/content_adaptive_slide_pipeline_design.md#4-loop-工程排版闭环控制算法与熔断机制)
-- **Stage 1 提炼重构工序**：详见 [Stage 1 长文提炼与节拍规范说明书](./docs/longform_to_slide_distiller_agent_design.md#4-长文到演示文本的重构工序-information-distillation-pipeline)
-- **RST 篇章要点拆解模型**：详见 [Stage 1 长文提炼与节拍规范说明书](./docs/longform_to_slide_distiller_agent_design.md#2-篇章修辞结构分析与论据逻辑树-discourse-parsing--rst)
+- **Stage 1 提炼重构工序**：详见 [Stage 1 长文提炼与演说节奏规范说明书](./docs/longform_to_slide_distiller_agent_design.md#4-长文到演示文本的重构工序-information-distillation-pipeline)
+- **RST 篇章要点拆解模型**：详见 [Stage 1 长文提炼与演说节奏规范说明书](./docs/longform_to_slide_distiller_agent_design.md#2-篇章修辞结构分析与论据逻辑树-discourse-parsing--rst)
 
 ---
 
