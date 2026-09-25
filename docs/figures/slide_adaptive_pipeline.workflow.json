@@ -36,7 +36,7 @@
     { "id": "phase_release", "label": "阶段四：自愈与交付", "fromCol": 5, "toCol": 5 }
   ],
   "groups": [
-    { "id": "grp_agent", "label": "后处理排版引擎 (Node 09 Agent)", "lane": "agent_lane", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "grp_agent", "label": "后处理排版引擎 (Stage 2 Layout)", "lane": "agent_lane", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
     { "id": "grp_loop", "label": "Loop 闭环自愈中心", "lane": "runtime_lane", "fromCol": 4, "toCol": 5, "variant": "dashed" }
   ],
   "mainPath": [
@@ -54,8 +54,8 @@
       "col": 0,
       "type": "external",
       "label": "原始 Marp 初稿",
-      "sublabel": "未考虑排版 / 长文粗稿",
-      "tag": "Node 05 产出",
+      "sublabel": "未考虑排版 / 纯净草稿",
+      "tag": "Stage 1 产出",
       "width": 140
     },
     {
@@ -75,7 +75,7 @@
       "type": "frontend",
       "label": "断点与语义卡片化",
       "sublabel": "ds-* / .split-layout / .card",
-      "tag": "Node 09 Agent",
+      "tag": "Stage 2 智能体",
       "width": 140
     },
     {

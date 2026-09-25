@@ -52,7 +52,7 @@
 
         <!-- Workflow groups -->
         <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-0" x="284" y="342" width="354" height="72" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="294" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">后处理排版引擎 (Node 09 Agent)</text>
+        <text x="294" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">后处理排版引擎 (Stage 2 Layout)</text>
         <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-1" x="610" y="476" width="354" height="72" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
         <text x="620" y="474" class="t-messagebus" font-size="13.5" font-weight="600" fill="rgb(234, 88, 12)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">Loop 闭环自愈中心</text>
 
@@ -66,14 +66,14 @@
         <path data-edge-from="theme_engine" data-edge-to="headless_sandbox" data-edge-label="挂载样式渲染" data-edge-key="6" data-edge-id="e_theme_sandbox" data-composition-points="564,413;564,568;684,568;684,547" d="M 564 413 L 564 568 L 684 568 L 684 547" class="a-emphasis" data-animate="edge" style="--step:3" stroke-width="1.8px" marker-end="url(#arrowhead-emphasis)" fill="none" stroke="rgb(5, 150, 105)"/>
 
         <!-- Nodes -->
-        <g id="node-raw_draft" data-node-id="raw_draft" data-node-label="原始 Marp 初稿" data-node-kind="external" data-node-sublabel="未考虑排版 / 长文粗稿" data-node-tag="Node 05 产出" data-node-context="内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计">
-          <title>原始 Marp 初稿 · 未考虑排版 / 长文粗稿 · 内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计 · Node 05 产出</title>
+        <g id="node-raw_draft" data-node-id="raw_draft" data-node-label="原始 Marp 初稿" data-node-kind="external" data-node-sublabel="未考虑排版 / 纯净草稿" data-node-tag="Stage 1 产出" data-node-context="内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计">
+          <title>原始 Marp 初稿 · 未考虑排版 / 纯净草稿 · 内容与母本轨 (SSOT Track) › 阶段一：输入与预算审计 · Stage 1 产出</title>
           <rect x="48" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="48" y="86" width="140" height="68" rx="6" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
           
           <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">原始 Marp 初稿</text>
-          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="12.1" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">未考虑排版 / 长文粗稿</text>
-        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Node 05 产出</text>
+          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="12.1" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">未考虑排版 / 纯净草稿</text>
+        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Stage 1 产出</text>
         </g>
 
         <g id="node-release_slides" data-node-id="release_slides" data-node-label="高颜值自适应幻灯片" data-node-kind="backend" data-node-sublabel="零溢出 / 优雅留白 / PDF" data-node-tag="最终出版物" data-node-context="内容与母本轨 (SSOT Track) › 阶段四：自愈与交付">
@@ -96,18 +96,18 @@
         <text data-detail="fine" x="238" y="267.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">字符容量卡尺</text>
         </g>
 
-        <g id="node-agent_layout" data-node-id="agent_layout" data-node-label="断点与语义卡片化" data-node-kind="frontend" data-node-sublabel="ds-* / .split-layout / .card" data-node-tag="Node 09 Agent" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配">
-          <title>断点与语义卡片化 · ds-* / .split-layout / .card · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配 · Node 09 Agent</title>
+        <g id="node-agent_layout" data-node-id="agent_layout" data-node-label="断点与语义卡片化" data-node-kind="frontend" data-node-sublabel="ds-* / .split-layout / .card" data-node-tag="Stage 2 智能体" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Stage 2 Layout) › 阶段二：响应式组件装配">
+          <title>断点与语义卡片化 · ds-* / .split-layout / .card · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Stage 2 Layout) › 阶段二：响应式组件装配 · Stage 2 智能体</title>
           <rect x="288" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="288" y="345" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:2" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
           
           <text data-node-label="" data-detail-anchor="" x="358" y="366.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">断点与语义卡片化</text>
           <text data-detail="context" x="358" y="384.4" class="t-muted" font-size="9.7" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">ds-* / .split-layout / .card</text>
-        <text data-detail="fine" x="358" y="400.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Node 09 Agent</text>
+        <text data-detail="fine" x="358" y="400.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Stage 2 智能体</text>
         </g>
 
-        <g id="node-theme_engine" data-node-id="theme_engine" data-node-label="自适应 CSS 引擎" data-node-kind="cloud" data-node-sublabel="容器查询 + clamp() 流体" data-node-tag="slide_responsive" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配">
-          <title>自适应 CSS 引擎 · 容器查询 + clamp() 流体 · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Node 09 Agent) › 阶段二：响应式组件装配 · slide_responsive</title>
+        <g id="node-theme_engine" data-node-id="theme_engine" data-node-label="自适应 CSS 引擎" data-node-kind="cloud" data-node-sublabel="容器查询 + clamp() 流体" data-node-tag="slide_responsive" data-node-context="后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Stage 2 Layout) › 阶段二：响应式组件装配">
+          <title>自适应 CSS 引擎 · 容器查询 + clamp() 流体 · 后处理排版智能体轨 (Layout Agent Track) › 后处理排版引擎 (Stage 2 Layout) › 阶段二：响应式组件装配 · slide_responsive</title>
           <rect x="494" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="494" y="345" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
           

@@ -1,0 +1,184 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "篇章修辞结构理论 (RST) 论辩逻辑解构与幻灯片映射模型",
+    "locale": "zh-CN",
+    "animation": "trace",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "rst-distillation-flow",
+        "label": "RST 认知层次解构全景",
+        "focus": [
+          "node_raw",
+          "node_thesis",
+          "node_section",
+          "node_nucleus",
+          "node_satellite",
+          "node_h2_lead",
+          "node_bullets",
+          "node_slide_draft"
+        ],
+        "note": "解构长文全篇核心主旨向章节议题分解，进一步分离核部（必选保留主旨）与卫星部（精炼论据），映射为结构化幻灯片的认知推进过程。"
+      }
+    ]
+  },
+  "lanes": [
+    { "id": "lane_thesis", "label": "篇章全局主旨轨 (Core Thesis Track)" },
+    { "id": "lane_section", "label": "章节议题骨架轨 (Discourse Section Track)" },
+    { "id": "lane_nucleus", "label": "核部要素抽取轨 (Nucleus / Must-Keep Track)" },
+    { "id": "lane_satellite", "label": "卫星要素浓缩轨 (Satellite / Distill Track)" },
+    { "id": "lane_slide", "label": "演示草稿装配轨 (Slide Assembly Track)" }
+  ],
+  "phases": [
+    { "id": "p_input", "label": "阶段一：主旨锚定", "fromCol": 0, "toCol": 1 },
+    { "id": "p_section", "label": "阶段二：议题分解", "fromCol": 2, "toCol": 2 },
+    { "id": "p_elements", "label": "阶段三：核部与卫星部分离", "fromCol": 3, "toCol": 3, "variant": "emphasis" },
+    { "id": "p_mapping", "label": "阶段四：语义卡片映射", "fromCol": 4, "toCol": 4 },
+    { "id": "p_output", "label": "阶段五：初始草稿交付", "fromCol": 5, "toCol": 5, "variant": "security" }
+  ],
+  "groups": [
+    { "id": "grp_rst_split", "label": "RST 认知要素解耦", "lane": "lane_nucleus", "fromCol": 3, "toCol": 4, "variant": "emphasis" }
+  ],
+  "mainPath": [
+    "node_raw",
+    "node_thesis",
+    "node_section",
+    "node_nucleus",
+    "node_h2_lead",
+    "node_slide_draft"
+  ],
+  "nodes": [
+    {
+      "id": "node_raw",
+      "lane": "lane_thesis",
+      "col": 0,
+      "type": "external",
+      "label": "原始 Markdown 长文",
+      "sublabel": "非结构化长篇专著/博客",
+      "tag": "万字输入源",
+      "width": 140
+    },
+    {
+      "id": "node_thesis",
+      "lane": "lane_thesis",
+      "col": 1,
+      "type": "cloud",
+      "label": "全篇核心主旨萃取",
+      "sublabel": "第一性原理与全局论断",
+      "tag": "Core Thesis",
+      "width": 140
+    },
+    {
+      "id": "node_section",
+      "lane": "lane_section",
+      "col": 2,
+      "type": "backend",
+      "label": "主干议题骨架分解",
+      "sublabel": "按章节话题转换聚合分流",
+      "tag": "Section Slicing",
+      "width": 140
+    },
+    {
+      "id": "node_nucleus",
+      "lane": "lane_nucleus",
+      "col": 3,
+      "type": "frontend",
+      "label": "核部要素抽取",
+      "sublabel": "核心机制推导与关键代码",
+      "tag": "Nucleus (必选保留)",
+      "width": 140
+    },
+    {
+      "id": "node_satellite",
+      "lane": "lane_satellite",
+      "col": 3,
+      "type": "database",
+      "label": "卫星要素降噪",
+      "sublabel": "背景铺垫与量化论据蒸馏",
+      "tag": "Satellite (浓缩提炼)",
+      "width": 140
+    },
+    {
+      "id": "node_h2_lead",
+      "lane": "lane_nucleus",
+      "col": 4,
+      "type": "security",
+      "label": "主标题与导语锚定",
+      "sublabel": "H2 (<=18字) + 核心导语",
+      "tag": "第一视觉重心",
+      "width": 140
+    },
+    {
+      "id": "node_bullets",
+      "lane": "lane_satellite",
+      "col": 4,
+      "type": "security",
+      "label": "精炼要点短语化",
+      "sublabel": "<=4条Bullets / 对比卡片",
+      "tag": "加粗引导短语",
+      "width": 140
+    },
+    {
+      "id": "node_slide_draft",
+      "lane": "lane_slide",
+      "col": 5,
+      "type": "frontend",
+      "label": "纯净演示初始草稿",
+      "sublabel": "单页<=180字 / 零HTML",
+      "tag": ".raw_draft.md",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_raw_th",
+      "from": "node_raw",
+      "to": "node_thesis",
+      "label": "宏观主旨抽象"
+    },
+    {
+      "id": "e_th_sec",
+      "from": "node_thesis",
+      "to": "node_section",
+      "label": "章节骨架切片"
+    },
+    {
+      "id": "e_sec_nuc",
+      "from": "node_section",
+      "to": "node_nucleus",
+      "label": "提取必选主论点"
+    },
+    {
+      "id": "e_sec_sat",
+      "from": "node_section",
+      "to": "node_satellite",
+      "label": "提取支撑性论据"
+    },
+    {
+      "id": "e_nuc_lead",
+      "from": "node_nucleus",
+      "to": "node_h2_lead",
+      "label": "映射标题导语"
+    },
+    {
+      "id": "e_sat_bul",
+      "from": "node_satellite",
+      "to": "node_bullets",
+      "label": "重塑加粗短语"
+    },
+    {
+      "id": "e_lead_draft",
+      "from": "node_h2_lead",
+      "to": "node_slide_draft",
+      "label": "注入演说骨架"
+    },
+    {
+      "id": "e_bul_draft",
+      "from": "node_bullets",
+      "to": "node_slide_draft",
+      "label": "填充要点内容"
+    }
+  ]
+}

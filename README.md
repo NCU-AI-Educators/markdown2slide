@@ -79,8 +79,10 @@
        [ 终极交付：高审美、自适应留白的精美 Marp 演示母本 ]
 ```
 
-- **全景工作流架构图**：详见 [docs/figures/slide_adaptive_pipeline.clean.svg](./docs/figures/slide_adaptive_pipeline.clean.svg)
-- **自愈状态机算法模型**：详见 [docs/figures/slide_loop_controller.clean.svg](./docs/figures/slide_loop_controller.clean.svg)
+- **全景编译流水线架构图**：详见 [docs/figures/slide_adaptive_pipeline.clean.svg](./docs/figures/slide_adaptive_pipeline.clean.svg)
+- **Stage 1 认知重构工序图**：详见 [docs/figures/distiller_pipeline_workflow.clean.svg](./docs/figures/distiller_pipeline_workflow.clean.svg)
+- **RST 篇章逻辑解构模型**：详见 [docs/figures/distiller_rst_discourse_tree.clean.svg](./docs/figures/distiller_rst_discourse_tree.clean.svg)
+- **Stage 2 闭环自愈状态机**：详见 [docs/figures/slide_loop_controller.clean.svg](./docs/figures/slide_loop_controller.clean.svg)
 
 ---
 

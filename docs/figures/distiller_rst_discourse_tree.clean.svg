@@ -1,0 +1,216 @@
+<svg viewBox="-4 4 1053 735" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title id="archify-diagram-title">篇章修辞结构理论 (RST) 论辩逻辑解构与幻灯片映射模型</title>
+        <desc id="archify-diagram-description">由 Archify 生成的工作流图。</desc>
+        <!-- Definitions -->
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-default" fill="rgb(148, 163, 184)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-emphasis" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-emphasis" fill="rgb(5, 150, 105)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-security" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-security" fill="rgb(225, 29, 72)" stroke="none"/>
+          </marker>
+          <marker id="arrowhead-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" class="m-dashed" fill="rgb(124, 58, 237)" stroke="none"/>
+          </marker>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" class="c-grid" stroke-width="0.5px" fill="none" stroke="rgb(226, 232, 240)"/>
+          </pattern>
+        </defs>
+
+        <!-- Background Grid -->
+        <rect width="100%" height="100%" fill="url(&quot;#grid&quot;)" stroke="none"/>
+
+        <!-- Swimlanes -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="981" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="74" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">01 / 篇章全局主旨轨 (Core Thesis Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="981" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="200" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">02 / 章节议题骨架轨 (Discourse Section Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="981" height="114" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="326" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">03 / 核部要素抽取轨 (Nucleus / Must-Keep Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-3" x="40" y="438" width="981" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="460" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">04 / 卫星要素浓缩轨 (Satellite / Distill Track)</text>
+
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-4" x="40" y="564" width="981" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="586" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">05 / 演示草稿装配轨 (Slide Assembly Track)</text>
+
+        <!-- Phase headers -->
+        <line x1="72" y1="35" x2="379.6" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="161.8" y="21.2" width="128.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="225.8" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段一：主旨锚定</text>
+        <line x1="407.6" y1="35" x2="505.20000000000005" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="392.4" y="21.2" width="128.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="456.40000000000003" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段二：议题分解</text>
+        <line x1="533.2" y1="35" x2="675.6" y2="35" class="a-emphasis" stroke-width="1.1px" fill="none" stroke="rgb(5, 150, 105)"/>
+        <rect x="513.4" y="21.2" width="182.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="604.4000000000001" y="39" class="t-backend" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段三：核部与卫星部分离</text>
+        <line x1="748.8000000000001" y1="35" x2="868.8000000000001" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="731.3" y="21.2" width="155.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="808.8000000000001" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段四：语义卡片映射</text>
+        <line x1="896.8000000000001" y1="35" x2="1016.8000000000001" y2="35" class="a-security" stroke-width="1.1px" fill="none" stroke="rgb(225, 29, 72)" stroke-dasharray="5px, 5px"/>
+        <rect x="879.3" y="21.2" width="155.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="956.8000000000001" y="39" class="t-security" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段五：初始草稿交付</text>
+
+        <!-- Workflow groups -->
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-0" x="505.20000000000005" y="342" width="363.6" height="72" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="515.2" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">RST 认知要素解耦</text>
+
+        <!-- Edge paths -->
+        <path data-edge-from="node_bullets" data-edge-to="node_slide_draft" data-edge-label="填充要点内容" data-edge-key="0" data-edge-id="e_bul_draft" data-composition-points="794.8000000000001,540;794.8000000000001,632;872.8000000000001,632" d="M 794.8000000000001 540 L 794.8000000000001 632 L 872.8000000000001 632" class="a-default" data-animate="edge" style="--step:6" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_h2_lead" data-edge-to="node_slide_draft" data-edge-label="注入演说骨架" data-edge-key="1" data-edge-id="e_lead_draft" data-composition-points="864.8000000000001,379;942.8000000000001,379;942.8000000000001,598" d="M 864.8000000000001 379 L 942.8000000000001 379 L 942.8000000000001 598" class="a-default" data-animate="edge" style="--step:4" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_nucleus" data-edge-to="node_h2_lead" data-edge-label="映射标题导语" data-edge-key="2" data-edge-id="e_nuc_lead" data-composition-points="649.2,379;724.8000000000001,379" d="M 649.2 379 L 724.8000000000001 379" class="a-default" data-animate="edge" style="--step:3" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_raw" data-edge-to="node_thesis" data-edge-label="宏观主旨抽象" data-edge-key="3" data-edge-id="e_raw_th" data-composition-points="188,120;263.6,120" d="M 188 120 L 263.6 120" class="a-default" data-animate="edge" style="--step:0" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_satellite" data-edge-to="node_bullets" data-edge-label="重塑加粗短语" data-edge-key="4" data-edge-id="e_sat_bul" data-composition-points="649.2,506;724.8000000000001,506" d="M 649.2 506 L 724.8000000000001 506" class="a-default" data-animate="edge" style="--step:10" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_section" data-edge-to="node_nucleus" data-edge-label="提取必选主论点" data-edge-key="5" data-edge-id="e_sec_nuc" data-composition-points="453.6,280;453.6,434;579.2,434;579.2,413" d="M 453.6 280 L 453.6 434 L 579.2 434 L 579.2 413" class="a-default" data-animate="edge" style="--step:2" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_section" data-edge-to="node_satellite" data-edge-label="提取支撑性论据" data-edge-key="6" data-edge-id="e_sec_sat" data-composition-points="453.6,280;453.6,560;579.2,560;579.2,540" d="M 453.6 280 L 453.6 560 L 579.2 560 L 579.2 540" class="a-default" data-animate="edge" style="--step:12" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_thesis" data-edge-to="node_section" data-edge-label="章节骨架切片" data-edge-key="7" data-edge-id="e_th_sec" data-composition-points="333.6,154;333.6,300;453.6,300;453.6,280" d="M 333.6 154 L 333.6 300 L 453.6 300 L 453.6 280" class="a-default" data-animate="edge" style="--step:1" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+
+        <!-- Nodes -->
+        <g id="node-node_raw" data-node-id="node_raw" data-node-label="原始 Markdown 长文" data-node-kind="external" data-node-sublabel="非结构化长篇专著/博客" data-node-tag="万字输入源" data-node-context="篇章全局主旨轨 (Core Thesis Track) › 阶段一：主旨锚定">
+          <title>原始 Markdown 长文 · 非结构化长篇专著/博客 · 篇章全局主旨轨 (Core Thesis Track) › 阶段一：主旨锚定 · 万字输入源</title>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="48" y="86" width="140" height="68" rx="6" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="12.8" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">原始 Markdown 长文</text>
+          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="11.8" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">非结构化长篇专著/博客</text>
+        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">万字输入源</text>
+        </g>
+
+        <g id="node-node_thesis" data-node-id="node_thesis" data-node-label="全篇核心主旨萃取" data-node-kind="cloud" data-node-sublabel="第一性原理与全局论断" data-node-tag="Core Thesis" data-node-context="篇章全局主旨轨 (Core Thesis Track) › 阶段一：主旨锚定">
+          <title>全篇核心主旨萃取 · 第一性原理与全局论断 · 篇章全局主旨轨 (Core Thesis Track) › 阶段一：主旨锚定 · Core Thesis</title>
+          <rect x="263.6" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="263.6" y="86" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:1" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="333.6" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">全篇核心主旨萃取</text>
+          <text data-detail="context" x="333.6" y="125.4" class="t-muted" font-size="12.4" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">第一性原理与全局论断</text>
+        <text data-detail="fine" x="333.6" y="141.8" class="t-cloud" font-size="11.5" text-anchor="middle" fill="rgb(217, 119, 6)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Core Thesis</text>
+        </g>
+
+        <g id="node-node_section" data-node-id="node_section" data-node-label="主干议题骨架分解" data-node-kind="backend" data-node-sublabel="按章节话题转换聚合分流" data-node-tag="Section Slicing" data-node-context="章节议题骨架轨 (Discourse Section Track) › 阶段二：议题分解">
+          <title>主干议题骨架分解 · 按章节话题转换聚合分流 · 章节议题骨架轨 (Discourse Section Track) › 阶段二：议题分解 · Section Slicing</title>
+          <rect x="383.6" y="212" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="383.6" y="212" width="140" height="68" rx="6" class="c-backend" data-animate="node" style="--step:2" stroke-width="1.5px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="453.6" y="233.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">主干议题骨架分解</text>
+          <text data-detail="context" x="453.6" y="251.4" class="t-muted" font-size="11.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">按章节话题转换聚合分流</text>
+        <text data-detail="fine" x="453.6" y="267.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Section Slicing</text>
+        </g>
+
+        <g id="node-node_nucleus" data-node-id="node_nucleus" data-node-label="核部要素抽取" data-node-kind="frontend" data-node-sublabel="核心机制推导与关键代码" data-node-tag="Nucleus (必选保留)" data-node-context="核部要素抽取轨 (Nucleus / Must-Keep Track) › RST 认知要素解耦 › 阶段三：核部与卫星部分离">
+          <title>核部要素抽取 · 核心机制推导与关键代码 · 核部要素抽取轨 (Nucleus / Must-Keep Track) › RST 认知要素解耦 › 阶段三：核部与卫星部分离 · Nucleus (必选保留)</title>
+          <rect x="509.20000000000005" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="509.20000000000005" y="345" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="579.2" y="366.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">核部要素抽取</text>
+          <text data-detail="context" x="579.2" y="384.4" class="t-muted" font-size="11.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">核心机制推导与关键代码</text>
+        <text data-detail="fine" x="579.2" y="400.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Nucleus (必选保留)</text>
+        </g>
+
+        <g id="node-node_h2_lead" data-node-id="node_h2_lead" data-node-label="主标题与导语锚定" data-node-kind="security" data-node-sublabel="H2 (&lt;=18字) + 核心导语" data-node-tag="第一视觉重心" data-node-context="核部要素抽取轨 (Nucleus / Must-Keep Track) › RST 认知要素解耦 › 阶段四：语义卡片映射">
+          <title>主标题与导语锚定 · H2 (&lt;=18字) + 核心导语 · 核部要素抽取轨 (Nucleus / Must-Keep Track) › RST 认知要素解耦 › 阶段四：语义卡片映射 · 第一视觉重心</title>
+          <rect x="724.8000000000001" y="345" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="724.8000000000001" y="345" width="140" height="68" rx="6" class="c-security" data-animate="node" style="--step:4" stroke-width="1.5px" fill="rgba(251, 113, 133, 0.15)" stroke="rgb(225, 29, 72)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="794.8000000000001" y="366.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">主标题与导语锚定</text>
+          <text data-detail="context" x="794.8000000000001" y="384.4" class="t-muted" font-size="11.4" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">H2 (&lt;=18字) + 核心导语</text>
+        <text data-detail="fine" x="794.8000000000001" y="400.8" class="t-security" font-size="11.5" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">第一视觉重心</text>
+        </g>
+
+        <g id="node-node_satellite" data-node-id="node_satellite" data-node-label="卫星要素降噪" data-node-kind="database" data-node-sublabel="背景铺垫与量化论据蒸馏" data-node-tag="Satellite (浓缩提炼)" data-node-context="卫星要素浓缩轨 (Satellite / Distill Track) › 阶段三：核部与卫星部分离">
+          <title>卫星要素降噪 · 背景铺垫与量化论据蒸馏 · 卫星要素浓缩轨 (Satellite / Distill Track) › 阶段三：核部与卫星部分离 · Satellite (浓缩提炼)</title>
+          <rect x="509.20000000000005" y="472" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="509.20000000000005" y="472" width="140" height="68" rx="6" class="c-database" data-animate="node" style="--step:11" stroke-width="1.5px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="579.2" y="493.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">卫星要素降噪</text>
+          <text data-detail="context" x="579.2" y="511.4" class="t-muted" font-size="11.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">背景铺垫与量化论据蒸馏</text>
+        <text data-detail="fine" x="579.2" y="527.8" class="t-database" font-size="11.5" text-anchor="middle" fill="rgb(124, 58, 237)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Satellite (浓缩提炼)</text>
+        </g>
+
+        <g id="node-node_bullets" data-node-id="node_bullets" data-node-label="精炼要点短语化" data-node-kind="security" data-node-sublabel="&lt;=4条Bullets / 对比卡片" data-node-tag="加粗引导短语" data-node-context="卫星要素浓缩轨 (Satellite / Distill Track) › 阶段四：语义卡片映射">
+          <title>精炼要点短语化 · &lt;=4条Bullets / 对比卡片 · 卫星要素浓缩轨 (Satellite / Distill Track) › 阶段四：语义卡片映射 · 加粗引导短语</title>
+          <rect x="724.8000000000001" y="472" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="724.8000000000001" y="472" width="140" height="68" rx="6" class="c-security" data-animate="node" style="--step:12" stroke-width="1.5px" fill="rgba(251, 113, 133, 0.15)" stroke="rgb(225, 29, 72)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="794.8000000000001" y="493.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">精炼要点短语化</text>
+          <text data-detail="context" x="794.8000000000001" y="511.4" class="t-muted" font-size="11" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">&lt;=4条Bullets / 对比卡片</text>
+        <text data-detail="fine" x="794.8000000000001" y="527.8" class="t-security" font-size="11.5" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">加粗引导短语</text>
+        </g>
+
+        <g id="node-node_slide_draft" data-node-id="node_slide_draft" data-node-label="纯净演示初始草稿" data-node-kind="frontend" data-node-sublabel="单页&lt;=180字 / 零HTML" data-node-tag=".raw_draft.md" data-node-context="演示草稿装配轨 (Slide Assembly Track) › 阶段五：初始草稿交付">
+          <title>纯净演示初始草稿 · 单页&lt;=180字 / 零HTML · 演示草稿装配轨 (Slide Assembly Track) › 阶段五：初始草稿交付 · .raw_draft.md</title>
+          <rect x="872.8000000000001" y="598" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="872.8000000000001" y="598" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:5" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+          
+          <text data-node-label="" data-detail-anchor="" x="942.8000000000001" y="619.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">纯净演示初始草稿</text>
+          <text data-detail="context" x="942.8000000000001" y="637.4" class="t-muted" font-size="11.4" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">单页&lt;=180字 / 零HTML</text>
+        <text data-detail="fine" x="942.8000000000001" y="653.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">.raw_draft.md</text>
+        </g>
+
+        <!-- Edge labels -->
+        <g data-detail="context" data-edge-from="node_bullets" data-edge-to="node_slide_draft" data-edge-label="填充要点内容" data-edge-key="0" data-edge-id="e_bul_draft">
+          <rect x="786.8" y="604.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="833.8000000000001" y="622" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">填充要点内容</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_h2_lead" data-edge-to="node_slide_draft" data-edge-label="注入演说骨架" data-edge-key="1" data-edge-id="e_lead_draft">
+          <rect x="856.8" y="351.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="903.8000000000001" y="369" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">注入演说骨架</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_nucleus" data-edge-to="node_h2_lead" data-edge-label="映射标题导语" data-edge-key="2" data-edge-id="e_nuc_lead">
+          <rect x="640.0" y="351.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="687" y="369" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">映射标题导语</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_raw" data-edge-to="node_thesis" data-edge-label="宏观主旨抽象" data-edge-key="3" data-edge-id="e_raw_th">
+          <rect x="178.8" y="92.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="225.8" y="110" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">宏观主旨抽象</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_satellite" data-edge-to="node_bullets" data-edge-label="重塑加粗短语" data-edge-key="4" data-edge-id="e_sat_bul">
+          <rect x="640.0" y="478.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="687" y="496" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">重塑加粗短语</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_section" data-edge-to="node_nucleus" data-edge-label="提取必选主论点" data-edge-key="5" data-edge-id="e_sec_nuc">
+          <rect x="462.9" y="406.2" width="107.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="516.4000000000001" y="424" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">提取必选主论点</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_section" data-edge-to="node_satellite" data-edge-label="提取支撑性论据" data-edge-key="6" data-edge-id="e_sec_sat">
+          <rect x="462.9" y="532.2" width="107.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="516.4000000000001" y="550" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">提取支撑性论据</text>
+        </g>
+        <g data-detail="context" data-edge-from="node_thesis" data-edge-to="node_section" data-edge-label="章节骨架切片" data-edge-key="7" data-edge-id="e_th_sec">
+          <rect x="346.6" y="272.2" width="94.0" height="26.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="393.6" y="290" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">章节骨架切片</text>
+        </g>
+
+        <!-- Legend -->
+        <g data-legend="" data-legend-bridge="" role="toolbar" aria-label="语义图例">
+          <text x="20" y="694" class="t-primary" font-size="13.5" font-weight="600" fill="rgb(15, 23, 42)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">图例</text>
+          <g data-legend-semantic-kind="frontend" data-legend-kind="frontend" data-legend-label="用户界面" data-legend-x="20" data-legend-baseline="714" data-legend-width="78" data-legend-count="2" role="button" tabindex="0" aria-label="检查用户界面，2 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="20" y="706" width="14" height="9" rx="2" class="c-frontend" stroke-width="1px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+            <text x="42" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">用户界面</text>
+          </g>
+          <g data-legend-semantic-kind="backend" data-legend-kind="backend" data-legend-label="Agent 逻辑" data-legend-x="105" data-legend-baseline="714" data-legend-width="87" data-legend-count="1" role="button" tabindex="-1" aria-label="检查Agent 逻辑，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="105" y="706" width="14" height="9" rx="2" class="c-backend" stroke-width="1px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
+            <text x="127" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">Agent 逻辑</text>
+          </g>
+          <g data-legend-semantic-kind="security" data-legend-kind="security" data-legend-label="策略" data-legend-x="199" data-legend-baseline="714" data-legend-width="61" data-legend-count="2" role="button" tabindex="-1" aria-label="检查策略，2 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="199" y="706" width="14" height="9" rx="2" class="c-security" stroke-width="1px" fill="rgba(251, 113, 133, 0.15)" stroke="rgb(225, 29, 72)"/>
+            <text x="221" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">策略</text>
+          </g>
+          <g data-legend-semantic-kind="database" data-legend-kind="database" data-legend-label="上下文 / 追踪" data-legend-x="267" data-legend-baseline="714" data-legend-width="100" data-legend-count="1" role="button" tabindex="-1" aria-label="检查上下文 / 追踪，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="267" y="706" width="14" height="9" rx="2" class="c-database" stroke-width="1px" fill="rgba(167, 139, 250, 0.2)" stroke="rgb(124, 58, 237)"/>
+            <text x="289" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">上下文 / 追踪</text>
+          </g>
+          <g data-legend-semantic-kind="cloud" data-legend-kind="cloud" data-legend-label="云服务" data-legend-x="374" data-legend-baseline="714" data-legend-width="70" data-legend-count="1" role="button" tabindex="-1" aria-label="检查云服务，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="374" y="706" width="14" height="9" rx="2" class="c-cloud" stroke-width="1px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+            <text x="396" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">云服务</text>
+          </g>
+          <g data-legend-semantic-kind="external" data-legend-kind="external" data-legend-label="外部系统" data-legend-x="451" data-legend-baseline="714" data-legend-width="78" data-legend-count="1" role="button" tabindex="-1" aria-label="检查外部系统，1 个节点" aria-pressed="false" aria-haspopup="dialog" aria-controls="semantic-lens" aria-expanded="false">
+            <rect x="451" y="706" width="14" height="9" rx="2" class="c-external" stroke-width="1px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
+            <text x="473" y="714" class="t-muted" font-size="10.5" font-weight="500" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">外部系统</text>
+          </g>
+        </g>
+      </svg>
