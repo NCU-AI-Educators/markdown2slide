@@ -2,14 +2,14 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "长文要点提炼与演示草稿五步重构流水线工序",
+    "title": "长文转幻灯片草稿的 5 步提炼工序",
     "locale": "zh-CN",
     "animation": "trace",
     "quality_profile": "showcase",
     "views": [
       {
         "id": "distiller-pipeline-view",
-        "label": "五步要点提炼与演说节奏编排流水线",
+        "label": "长文要点提炼与演说节奏编排流水线",
         "focus": [
           "node_raw_in",
           "node_ast_parse",
@@ -18,24 +18,24 @@
           "node_intent_tag",
           "node_contract_deliver"
         ],
-        "note": "从万字长文输入，经 AST 解析、演说节拍切片、高信噪比重写、语义意图标注到契约门禁，端到端生成零内联纯净演示草稿。"
+        "note": "输入长文后，依次通过大纲解析、演说节奏分页、段落文字精简、排版意图标注和容量检查，生成纯净规范的演示文稿草稿。"
       }
     ]
   },
   "lanes": [
-    { "id": "lane_doc", "label": "文档解析轨 (Document AST Track)" },
-    { "id": "lane_pacing", "label": "演说节拍轨 (Cognitive Pacing Track)" },
-    { "id": "lane_distill", "label": "信噪比重构轨 (High-SNR Distill Track)" },
-    { "id": "lane_contract", "label": "契约门禁轨 (Quality Contract Track)" }
+    { "id": "lane_doc", "label": "文档大纲轨 (Document AST Track)" },
+    { "id": "lane_pacing", "label": "演说分页轨 (Cognitive Pacing Track)" },
+    { "id": "lane_distill", "label": "文字精炼轨 (Text Refinement Track)" },
+    { "id": "lane_contract", "label": "质量检查轨 (Quality Check Track)" }
   ],
   "phases": [
-    { "id": "phase_ingest", "label": "阶段一：输入与语义解析", "fromCol": 0, "toCol": 1 },
-    { "id": "phase_pacing", "label": "阶段二：节拍切片与拆页", "fromCol": 2, "toCol": 2, "variant": "emphasis" },
-    { "id": "phase_rewrite", "label": "阶段三：段落重写与意图", "fromCol": 3, "toCol": 4 },
-    { "id": "phase_deliver", "label": "阶段四：契约核验与交付", "fromCol": 5, "toCol": 5, "variant": "security" }
+    { "id": "phase_ingest", "label": "第 1 阶段：输入与大纲解析", "fromCol": 0, "toCol": 1 },
+    { "id": "phase_pacing", "label": "第 2 阶段：演说节奏拆页", "fromCol": 2, "toCol": 2, "variant": "emphasis" },
+    { "id": "phase_rewrite", "label": "第 3 阶段：文字精炼与意图", "fromCol": 3, "toCol": 4 },
+    { "id": "phase_deliver", "label": "第 4 阶段：质量检查与交付", "fromCol": 5, "toCol": 5, "variant": "security" }
   ],
   "groups": [
-    { "id": "grp_distill", "label": "核心提炼与节拍引擎", "lane": "lane_distill", "fromCol": 2, "toCol": 4, "variant": "emphasis" }
+    { "id": "grp_distill", "label": "核心提炼与节奏处理", "lane": "lane_distill", "fromCol": 2, "toCol": 4, "variant": "emphasis" }
   ],
   "mainPath": [
     "node_raw_in",
@@ -51,9 +51,9 @@
       "lane": "lane_doc",
       "col": 0,
       "type": "external",
-      "label": "原始 Markdown 长文",
-      "sublabel": "散文长文 / 技术专著",
-      "tag": "万字输入源",
+      "label": "输入 Markdown 长文",
+      "sublabel": "技术博客、长篇报告或教材",
+      "tag": "输入源",
       "width": 140
     },
     {
@@ -61,9 +61,9 @@
       "lane": "lane_doc",
       "col": 1,
       "type": "backend",
-      "label": "工序 1: 语义树解析",
-      "sublabel": "标题层级 / RST 论点抽取",
-      "tag": "AST Parsing",
+      "label": "第 1 步：解析文档大纲",
+      "sublabel": "识别标题层级与核心论点",
+      "tag": "大纲梳理",
       "width": 140
     },
     {
@@ -71,9 +71,9 @@
       "lane": "lane_pacing",
       "col": 2,
       "type": "frontend",
-      "label": "工序 2: 演说节拍切片",
-      "sublabel": "注入 '---' 分页符/独立目标",
-      "tag": "Beat Slicing",
+      "label": "第 2 步：按节奏分页",
+      "sublabel": "每页只讲一件事，用 --- 隔开",
+      "tag": "单页切分",
       "width": 140
     },
     {
@@ -81,9 +81,9 @@
       "lane": "lane_distill",
       "col": 3,
       "type": "frontend",
-      "label": "工序 3: 段落重写蒸馏",
-      "sublabel": "消除修饰 / 动宾短语化",
-      "tag": "High SNR",
+      "label": "第 3 步：精简段落文字",
+      "sublabel": "删掉冗长修饰，改为加粗短语",
+      "tag": "文字提炼",
       "width": 140
     },
     {
@@ -91,9 +91,9 @@
       "lane": "lane_distill",
       "col": 4,
       "type": "cloud",
-      "label": "工序 4: 语义意图标注",
-      "sublabel": "注入 <!-- intention: ... -->",
-      "tag": "Semantic Hint",
+      "label": "第 4 步：标注排版意图",
+      "sublabel": "标明对比、代码或重点提示",
+      "tag": "意图标注",
       "width": 140
     },
     {
@@ -101,8 +101,8 @@
       "lane": "lane_contract",
       "col": 5,
       "type": "security",
-      "label": "工序 5: 契约校验交付",
-      "sublabel": "单页<=180字 / 零HTML交付",
+      "label": "第 5 步：检查与交付",
+      "sublabel": "单页在180字以内，不写HTML",
       "tag": ".raw_draft.md",
       "width": 150
     }
@@ -112,31 +112,31 @@
       "id": "e_raw_ast",
       "from": "node_raw_in",
       "to": "node_ast_parse",
-      "label": "层级骨架抽取"
+      "label": "抽取大纲层级"
     },
     {
       "id": "e_ast_beat",
       "from": "node_ast_parse",
       "to": "node_beat_slice",
-      "label": "话题切片划分"
+      "label": "划分演说章节"
     },
     {
       "id": "e_beat_rew",
       "from": "node_beat_slice",
       "to": "node_text_rewrite",
-      "label": "单页要点精炼"
+      "label": "按页精简文字"
     },
     {
       "id": "e_rew_tag",
       "from": "node_text_rewrite",
       "to": "node_intent_tag",
-      "label": "演说原型匹配"
+      "label": "匹配展示场景"
     },
     {
       "id": "e_tag_deliver",
       "from": "node_intent_tag",
       "to": "node_contract_deliver",
-      "label": "硬预算审计与交付"
+      "label": "核验容量并输出"
     }
   ]
 }

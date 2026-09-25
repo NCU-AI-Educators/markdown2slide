@@ -2,14 +2,14 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "篇章修辞结构理论 (RST) 论辩逻辑解构与幻灯片映射模型",
+    "title": "篇章修辞结构 (RST) 要点拆解与幻灯片对应关系",
     "locale": "zh-CN",
     "animation": "trace",
     "quality_profile": "showcase",
     "views": [
       {
         "id": "rst-distillation-flow",
-        "label": "RST 认知层次解构全景",
+        "label": "RST 认知要点提炼与幻灯片映射",
         "focus": [
           "node_raw",
           "node_thesis",
@@ -20,26 +20,26 @@
           "node_bullets",
           "node_slide_draft"
         ],
-        "note": "解构长文全篇核心主旨向章节议题分解，进一步分离核部（必选保留主旨）与卫星部（精炼论据），映射为结构化幻灯片的认知推进过程。"
+        "note": "长文先提炼全篇主旨，再按章节拆分议题，然后区分必须保留的核心论点与需要精简的补充论据，最终对应到幻灯片各区域。"
       }
     ]
   },
   "lanes": [
-    { "id": "lane_thesis", "label": "篇章全局主旨轨 (Core Thesis Track)" },
-    { "id": "lane_section", "label": "章节议题骨架轨 (Discourse Section Track)" },
-    { "id": "lane_nucleus", "label": "核部要素抽取轨 (Nucleus / Must-Keep Track)" },
-    { "id": "lane_satellite", "label": "卫星要素浓缩轨 (Satellite / Distill Track)" },
-    { "id": "lane_slide", "label": "演示草稿装配轨 (Slide Assembly Track)" }
+    { "id": "lane_thesis", "label": "文章主旨轨 (Core Thesis)" },
+    { "id": "lane_section", "label": "章节大纲轨 (Section Topics)" },
+    { "id": "lane_nucleus", "label": "核心论点轨 (Nucleus / 必须保留)" },
+    { "id": "lane_satellite", "label": "补充论据轨 (Satellite / 浓缩精炼)" },
+    { "id": "lane_slide", "label": "幻灯片装配轨 (Slide Elements)" }
   ],
   "phases": [
-    { "id": "p_input", "label": "阶段一：主旨锚定", "fromCol": 0, "toCol": 1 },
-    { "id": "p_section", "label": "阶段二：议题分解", "fromCol": 2, "toCol": 2 },
-    { "id": "p_elements", "label": "阶段三：核部与卫星部分离", "fromCol": 3, "toCol": 3, "variant": "emphasis" },
-    { "id": "p_mapping", "label": "阶段四：语义卡片映射", "fromCol": 4, "toCol": 4 },
-    { "id": "p_output", "label": "阶段五：初始草稿交付", "fromCol": 5, "toCol": 5, "variant": "security" }
+    { "id": "p_input", "label": "第 1 阶段：明确主旨", "fromCol": 0, "toCol": 1 },
+    { "id": "p_section", "label": "第 2 阶段：梳理章节", "fromCol": 2, "toCol": 2 },
+    { "id": "p_elements", "label": "第 3 阶段：区分主次论据", "fromCol": 3, "toCol": 3, "variant": "emphasis" },
+    { "id": "p_mapping", "label": "第 4 阶段：对应页面位置", "fromCol": 4, "toCol": 4 },
+    { "id": "p_output", "label": "第 5 阶段：生成初始草稿", "fromCol": 5, "toCol": 5, "variant": "security" }
   ],
   "groups": [
-    { "id": "grp_rst_split", "label": "RST 认知要素解耦", "lane": "lane_nucleus", "fromCol": 3, "toCol": 4, "variant": "emphasis" }
+    { "id": "grp_rst_split", "label": "主次要点分类", "lane": "lane_nucleus", "fromCol": 3, "toCol": 4, "variant": "emphasis" }
   ],
   "mainPath": [
     "node_raw",
@@ -55,9 +55,9 @@
       "lane": "lane_thesis",
       "col": 0,
       "type": "external",
-      "label": "原始 Markdown 长文",
-      "sublabel": "非结构化长篇专著/博客",
-      "tag": "万字输入源",
+      "label": "长文输入",
+      "sublabel": "技术博客、学术论文或讲义",
+      "tag": "原始文档",
       "width": 140
     },
     {
@@ -65,9 +65,9 @@
       "lane": "lane_thesis",
       "col": 1,
       "type": "cloud",
-      "label": "全篇核心主旨萃取",
-      "sublabel": "第一性原理与全局论断",
-      "tag": "Core Thesis",
+      "label": "提炼全篇主旨",
+      "sublabel": "弄清文章要解决的核心问题",
+      "tag": "全篇主旨",
       "width": 140
     },
     {
@@ -75,9 +75,9 @@
       "lane": "lane_section",
       "col": 2,
       "type": "backend",
-      "label": "主干议题骨架分解",
-      "sublabel": "按章节话题转换聚合分流",
-      "tag": "Section Slicing",
+      "label": "拆分章节议题",
+      "sublabel": "按段落话题切出核心模块",
+      "tag": "章节大纲",
       "width": 140
     },
     {
@@ -85,9 +85,9 @@
       "lane": "lane_nucleus",
       "col": 3,
       "type": "frontend",
-      "label": "核部要素抽取",
-      "sublabel": "核心机制推导与关键代码",
-      "tag": "Nucleus (必选保留)",
+      "label": "保留核心论点",
+      "sublabel": "关键原理解析与重点代码",
+      "tag": "核部（必选）",
       "width": 140
     },
     {
@@ -95,9 +95,9 @@
       "lane": "lane_satellite",
       "col": 3,
       "type": "database",
-      "label": "卫星要素降噪",
-      "sublabel": "背景铺垫与量化论据蒸馏",
-      "tag": "Satellite (浓缩提炼)",
+      "label": "精简补充论据",
+      "sublabel": "背景说明与数据浓缩为短语",
+      "tag": "卫星部（精炼）",
       "width": 140
     },
     {
@@ -105,9 +105,9 @@
       "lane": "lane_nucleus",
       "col": 4,
       "type": "security",
-      "label": "主标题与导语锚定",
-      "sublabel": "H2 (<=18字) + 核心导语",
-      "tag": "第一视觉重心",
+      "label": "生成标题与导语",
+      "sublabel": "单页主标题与核心论断说明",
+      "tag": "页面上方",
       "width": 140
     },
     {
@@ -115,9 +115,9 @@
       "lane": "lane_satellite",
       "col": 4,
       "type": "security",
-      "label": "精炼要点短语化",
-      "sublabel": "<=4条Bullets / 对比卡片",
-      "tag": "加粗引导短语",
+      "label": "组织要点列表",
+      "sublabel": "最多4条加粗要点或对比",
+      "tag": "页面主体",
       "width": 140
     },
     {
@@ -125,8 +125,8 @@
       "lane": "lane_slide",
       "col": 5,
       "type": "frontend",
-      "label": "纯净演示初始草稿",
-      "sublabel": "单页<=180字 / 零HTML",
+      "label": "输出 Marp 初稿",
+      "sublabel": "单页字数在180字以内",
       "tag": ".raw_draft.md",
       "width": 140
     }
@@ -136,49 +136,49 @@
       "id": "e_raw_th",
       "from": "node_raw",
       "to": "node_thesis",
-      "label": "宏观主旨抽象"
+      "label": "通读并归纳主旨"
     },
     {
       "id": "e_th_sec",
       "from": "node_thesis",
       "to": "node_section",
-      "label": "章节骨架切片"
+      "label": "梳理章节结构"
     },
     {
       "id": "e_sec_nuc",
       "from": "node_section",
       "to": "node_nucleus",
-      "label": "提取必选主论点"
+      "label": "挑出必须保留的主题"
     },
     {
       "id": "e_sec_sat",
       "from": "node_section",
       "to": "node_satellite",
-      "label": "提取支撑性论据"
+      "label": "梳理相关支撑材料"
     },
     {
       "id": "e_nuc_lead",
       "from": "node_nucleus",
       "to": "node_h2_lead",
-      "label": "映射标题导语"
+      "label": "写成主标题与单句导语"
     },
     {
       "id": "e_sat_bul",
       "from": "node_satellite",
       "to": "node_bullets",
-      "label": "重塑加粗短语"
+      "label": "浓缩为加粗提示项"
     },
     {
       "id": "e_lead_draft",
       "from": "node_h2_lead",
       "to": "node_slide_draft",
-      "label": "注入演说骨架"
+      "label": "作为幻灯片上方标题"
     },
     {
       "id": "e_bul_draft",
       "from": "node_bullets",
       "to": "node_slide_draft",
-      "label": "填充要点内容"
+      "label": "作为幻灯片正文列表"
     }
   ]
 }

@@ -1,5 +1,5 @@
-<svg viewBox="-4 4 1071 607" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title id="archify-diagram-title">长文要点提炼与演示草稿五步重构流水线工序</title>
+<svg viewBox="-4 3 1093 608" role="img" lang="zh-CN" aria-labelledby="archify-diagram-title archify-diagram-description" data-animation="trace" data-preset="classic" data-quality-profile="showcase" style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="-4" y="3" width="1093" height="608" fill="#ffffff"/>
+        <title id="archify-diagram-title">长文转幻灯片草稿的 5 步提炼工序</title>
         <desc id="archify-diagram-description">由 Archify 生成的工作流图。</desc>
         <!-- Definitions -->
         <defs>
@@ -24,124 +24,124 @@
         <rect width="100%" height="100%" fill="url(&quot;#grid&quot;)" stroke="none"/>
 
         <!-- Swimlanes -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="992" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="54" y="74" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">01 / 文档解析轨 (Document AST Track)</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-0" x="40" y="52" width="997" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="74" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">01 / 文档大纲轨 (Document AST Track)</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="992" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="54" y="200" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">02 / 演说节拍轨 (Cognitive Pacing Track)</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-1" x="40" y="178" width="997" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="200" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">02 / 演说分页轨 (Cognitive Pacing Track)</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="992" height="112" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="54" y="326" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">03 / 信噪比重构轨 (High-SNR Distill Track)</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-2" x="40" y="304" width="997" height="112" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="326" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">03 / 文字精炼轨 (Text Refinement Track)</text>
 
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-3" x="40" y="436" width="992" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="54" y="458" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">04 / 契约门禁轨 (Quality Contract Track)</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="lane" data-composition-frame-id="lane-3" x="40" y="436" width="997" height="106" rx="10" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="54" y="458" class="t-dim" font-size="17.5" font-weight="800" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">04 / 质量检查轨 (Quality Check Track)</text>
 
         <!-- Phase headers -->
         <line x1="72" y1="35" x2="379.6" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
-        <rect x="141.3" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
-        <text x="225.8" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段一：输入与语义解析</text>
-        <line x1="407.6" y1="35" x2="538.8" y2="35" class="a-emphasis" stroke-width="1.1px" fill="none" stroke="rgb(5, 150, 105)"/>
-        <rect x="388.7" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
-        <text x="473.20000000000005" y="39" class="t-backend" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段二：节拍切片与拆页</text>
-        <line x1="566.8" y1="35" x2="874.4" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
-        <rect x="636.1" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
-        <text x="720.5999999999999" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段三：段落重写与意图</text>
-        <line x1="902.4" y1="35" x2="1033.6" y2="35" class="a-security" stroke-width="1.1px" fill="none" stroke="rgb(225, 29, 72)" stroke-dasharray="5px, 5px"/>
-        <rect x="883.5" y="21.1" width="169.0" height="26.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
-        <text x="968" y="39" class="t-security" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">阶段四：契约核验与交付</text>
+        <rect x="134.3" y="20.5" width="183.0" height="27.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="225.8" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 1 阶段：输入与大纲解析</text>
+        <line x1="407.6" y1="35" x2="544.4" y2="35" class="a-emphasis" stroke-width="1.1px" fill="none" stroke="rgb(5, 150, 105)"/>
+        <rect x="389.5" y="20.5" width="173.0" height="27.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="476" y="39" class="t-backend" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 2 阶段：演说节奏拆页</text>
+        <line x1="572.4000000000001" y1="35" x2="880.0000000000001" y2="35" class="a-default" stroke-width="1.1px" fill="none" stroke="rgb(148, 163, 184)"/>
+        <rect x="633.2" y="20.5" width="186.0" height="27.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="726.2" y="39" class="t-muted" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(100, 116, 139)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 3 阶段：文字精炼与意图</text>
+        <line x1="908" y1="35" x2="1056" y2="35" class="a-security" stroke-width="1.1px" fill="none" stroke="rgb(225, 29, 72)" stroke-dasharray="5px, 5px"/>
+        <rect x="889.0" y="20.5" width="186.0" height="27.0" rx="4" class="c-mask" fill="rgba(241, 245, 249, 0.82)" stroke="rgba(203, 213, 225, 0.75)" stroke-width="0.8px"/>
+        <text x="982" y="39" class="t-security" font-size="13.5" font-weight="600" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 4 阶段：质量检查与交付</text>
 
         <!-- Workflow groups -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-0" x="403.6" y="342" width="498.79999999999995" height="70" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
-        <text x="413.6" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">核心提炼与节拍引擎</text>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="group" data-composition-frame-id="group-0" x="403.59999999999997" y="342" width="504.40000000000003" height="70" rx="9" class="c-lane" stroke-width="1px" fill="rgba(248, 250, 252, 0.65)" stroke="rgb(203, 213, 225)" stroke-dasharray="6px, 6px"/>
+        <text x="413.59999999999997" y="340" class="t-backend" font-size="13.5" font-weight="600" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" text-anchor="start">核心提炼与节奏处理</text>
 
         <!-- Edge paths -->
-        <path data-edge-from="node_ast_parse" data-edge-to="node_beat_slice" data-edge-label="话题切片划分" data-edge-key="0" data-edge-id="e_ast_beat" data-composition-points="333.6,154;333.6,300;453.6,300;453.6,280" d="M 333.6 154 L 333.6 300 L 453.6 300 L 453.6 280" class="a-default" data-animate="edge" style="--step:1" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
-        <path data-edge-from="node_beat_slice" data-edge-to="node_text_rewrite" data-edge-label="单页要点精炼" data-edge-key="1" data-edge-id="e_beat_rew" data-composition-points="523.6,246;612.8,246;612.8,343" d="M 523.6 246 L 612.8 246 L 612.8 343" class="a-default" data-animate="edge" style="--step:2" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
-        <path data-edge-from="node_raw_in" data-edge-to="node_ast_parse" data-edge-label="层级骨架抽取" data-edge-key="2" data-edge-id="e_raw_ast" data-composition-points="188,120;263.6,120" d="M 188 120 L 263.6 120" class="a-default" data-animate="edge" style="--step:0" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
-        <path data-edge-from="node_text_rewrite" data-edge-to="node_intent_tag" data-edge-label="演说原型匹配" data-edge-key="3" data-edge-id="e_rew_tag" data-composition-points="682.8,377;758.4,377" d="M 682.8 377 L 758.4 377" class="a-default" data-animate="edge" style="--step:3" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
-        <path data-edge-from="node_intent_tag" data-edge-to="node_contract_deliver" data-edge-label="硬预算审计与交付" data-edge-key="4" data-edge-id="e_tag_deliver" data-composition-points="828.4,411;828.4,558;948.4,558;948.4,538" d="M 828.4 411 L 828.4 558 L 948.4 558 L 948.4 538" class="a-default" data-animate="edge" style="--step:4" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_ast_parse" data-edge-to="node_beat_slice" data-edge-label="划分演说章节" data-edge-key="0" data-edge-id="e_ast_beat" data-composition-points="333.6,154;333.6,300;453.6,300;453.6,280" d="M 333.6 154 L 333.6 300 L 453.6 300 L 453.6 280" class="a-default" data-animate="edge" style="--step:1" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_beat_slice" data-edge-to="node_text_rewrite" data-edge-label="按页精简文字" data-edge-key="1" data-edge-id="e_beat_rew" data-composition-points="523.6,246;618.4,246;618.4,343" d="M 523.6 246 L 618.4 246 L 618.4 343" class="a-default" data-animate="edge" style="--step:2" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_raw_in" data-edge-to="node_ast_parse" data-edge-label="抽取大纲层级" data-edge-key="2" data-edge-id="e_raw_ast" data-composition-points="188,120;263.6,120" d="M 188 120 L 263.6 120" class="a-default" data-animate="edge" style="--step:0" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_text_rewrite" data-edge-to="node_intent_tag" data-edge-label="匹配展示场景" data-edge-key="3" data-edge-id="e_rew_tag" data-composition-points="688.4,377;764,377" d="M 688.4 377 L 764 377" class="a-default" data-animate="edge" style="--step:3" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
+        <path data-edge-from="node_intent_tag" data-edge-to="node_contract_deliver" data-edge-label="核验容量并输出" data-edge-key="4" data-edge-id="e_tag_deliver" data-composition-points="834,411;834,558;954,558;954,538" d="M 834 411 L 834 558 L 954 558 L 954 538" class="a-default" data-animate="edge" style="--step:4" stroke-width="1.4px" marker-end="url(#arrowhead)" fill="none" stroke="rgb(148, 163, 184)"/>
 
         <!-- Nodes -->
-        <g id="node-node_raw_in" data-node-id="node_raw_in" data-node-label="原始 Markdown 长文" data-node-kind="external" data-node-sublabel="散文长文 / 技术专著" data-node-tag="万字输入源" data-node-context="文档解析轨 (Document AST Track) › 阶段一：输入与语义解析">
-          <title>原始 Markdown 长文 · 散文长文 / 技术专著 · 文档解析轨 (Document AST Track) › 阶段一：输入与语义解析 · 万字输入源</title>
+        <g id="node-node_raw_in" data-node-id="node_raw_in" data-node-label="输入 Markdown 长文" data-node-kind="external" data-node-sublabel="技术博客、长篇报告或教材" data-node-tag="输入源" data-node-context="文档大纲轨 (Document AST Track) › 第 1 阶段：输入与大纲解析">
+          <title>输入 Markdown 长文 · 技术博客、长篇报告或教材 · 文档大纲轨 (Document AST Track) › 第 1 阶段：输入与大纲解析 · 输入源</title>
           <rect x="48" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="48" y="86" width="140" height="68" rx="6" class="c-external" data-animate="node" style="--step:0" stroke-width="1.5px" fill="rgba(148, 163, 184, 0.18)" stroke="rgb(100, 116, 139)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="12.8" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">原始 Markdown 长文</text>
-          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="12.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">散文长文 / 技术专著</text>
-        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">万字输入源</text>
+          <text data-node-label="" data-detail-anchor="" x="118" y="107.8" class="t-primary" font-size="12.8" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">输入 Markdown 长文</text>
+          <text data-detail="context" x="118" y="125.4" class="t-muted" font-size="10.3" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">技术博客、长篇报告或教材</text>
+        <text data-detail="fine" x="118" y="141.8" class="t-external" font-size="11.5" text-anchor="middle" fill="rgb(51, 65, 85)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">输入源</text>
         </g>
 
-        <g id="node-node_ast_parse" data-node-id="node_ast_parse" data-node-label="工序 1: 语义树解析" data-node-kind="backend" data-node-sublabel="标题层级 / RST 论点抽取" data-node-tag="AST Parsing" data-node-context="文档解析轨 (Document AST Track) › 阶段一：输入与语义解析">
-          <title>工序 1: 语义树解析 · 标题层级 / RST 论点抽取 · 文档解析轨 (Document AST Track) › 阶段一：输入与语义解析 · AST Parsing</title>
+        <g id="node-node_ast_parse" data-node-id="node_ast_parse" data-node-label="第 1 步：解析文档大纲" data-node-kind="backend" data-node-sublabel="识别标题层级与核心论点" data-node-tag="大纲梳理" data-node-context="文档大纲轨 (Document AST Track) › 第 1 阶段：输入与大纲解析">
+          <title>第 1 步：解析文档大纲 · 识别标题层级与核心论点 · 文档大纲轨 (Document AST Track) › 第 1 阶段：输入与大纲解析 · 大纲梳理</title>
           <rect x="263.6" y="86" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="263.6" y="86" width="140" height="68" rx="6" class="c-backend" data-animate="node" style="--step:1" stroke-width="1.5px" fill="rgba(52, 211, 153, 0.18)" stroke="rgb(5, 150, 105)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="333.6" y="107.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">工序 1: 语义树解析</text>
-          <text data-detail="context" x="333.6" y="125.4" class="t-muted" font-size="10.8" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">标题层级 / RST 论点抽取</text>
-        <text data-detail="fine" x="333.6" y="141.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">AST Parsing</text>
+          <text data-node-label="" data-detail-anchor="" x="333.6" y="107.8" class="t-primary" font-size="12.3" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 1 步：解析文档大纲</text>
+          <text data-detail="context" x="333.6" y="125.4" class="t-muted" font-size="11.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">识别标题层级与核心论点</text>
+        <text data-detail="fine" x="333.6" y="141.8" class="t-backend" font-size="11.5" text-anchor="middle" fill="rgb(5, 150, 105)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">大纲梳理</text>
         </g>
 
-        <g id="node-node_beat_slice" data-node-id="node_beat_slice" data-node-label="工序 2: 演说节拍切片" data-node-kind="frontend" data-node-sublabel="注入 '---' 分页符/独立目标" data-node-tag="Beat Slicing" data-node-context="演说节拍轨 (Cognitive Pacing Track) › 阶段二：节拍切片与拆页">
-          <title>工序 2: 演说节拍切片 · 注入 '---' 分页符/独立目标 · 演说节拍轨 (Cognitive Pacing Track) › 阶段二：节拍切片与拆页 · Beat Slicing</title>
+        <g id="node-node_beat_slice" data-node-id="node_beat_slice" data-node-label="第 2 步：按节奏分页" data-node-kind="frontend" data-node-sublabel="每页只讲一件事，用 --- 隔开" data-node-tag="单页切分" data-node-context="演说分页轨 (Cognitive Pacing Track) › 第 2 阶段：演说节奏拆页">
+          <title>第 2 步：按节奏分页 · 每页只讲一件事，用 --- 隔开 · 演说分页轨 (Cognitive Pacing Track) › 第 2 阶段：演说节奏拆页 · 单页切分</title>
           <rect x="383.6" y="212" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
           <rect x="383.6" y="212" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:2" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="453.6" y="233.8" class="t-primary" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">工序 2: 演说节拍切片</text>
-          <text data-detail="context" x="453.6" y="251.4" class="t-muted" font-size="9.8" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">注入 '---' 分页符/独立目标</text>
-        <text data-detail="fine" x="453.6" y="267.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Beat Slicing</text>
+          <text data-node-label="" data-detail-anchor="" x="453.6" y="233.8" class="t-primary" font-size="13.3" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 2 步：按节奏分页</text>
+          <text data-detail="context" x="453.6" y="251.4" class="t-muted" font-size="9.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">每页只讲一件事，用 --- 隔开</text>
+        <text data-detail="fine" x="453.6" y="267.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">单页切分</text>
         </g>
 
-        <g id="node-node_text_rewrite" data-node-id="node_text_rewrite" data-node-label="工序 3: 段落重写蒸馏" data-node-kind="frontend" data-node-sublabel="消除修饰 / 动宾短语化" data-node-tag="High SNR" data-node-context="信噪比重构轨 (High-SNR Distill Track) › 核心提炼与节拍引擎 › 阶段三：段落重写与意图">
-          <title>工序 3: 段落重写蒸馏 · 消除修饰 / 动宾短语化 · 信噪比重构轨 (High-SNR Distill Track) › 核心提炼与节拍引擎 › 阶段三：段落重写与意图 · High SNR</title>
-          <rect x="542.8" y="343" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
-          <rect x="542.8" y="343" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
+        <g id="node-node_text_rewrite" data-node-id="node_text_rewrite" data-node-label="第 3 步：精简段落文字" data-node-kind="frontend" data-node-sublabel="删掉冗长修饰，改为加粗短语" data-node-tag="文字提炼" data-node-context="文字精炼轨 (Text Refinement Track) › 核心提炼与节奏处理 › 第 3 阶段：文字精炼与意图">
+          <title>第 3 步：精简段落文字 · 删掉冗长修饰，改为加粗短语 · 文字精炼轨 (Text Refinement Track) › 核心提炼与节奏处理 › 第 3 阶段：文字精炼与意图 · 文字提炼</title>
+          <rect x="548.4" y="343" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="548.4" y="343" width="140" height="68" rx="6" class="c-frontend" data-animate="node" style="--step:3" stroke-width="1.5px" fill="rgba(34, 211, 238, 0.15)" stroke="rgb(8, 145, 178)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="612.8" y="364.8" class="t-primary" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">工序 3: 段落重写蒸馏</text>
-          <text data-detail="context" x="612.8" y="382.4" class="t-muted" font-size="12.2" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">消除修饰 / 动宾短语化</text>
-        <text data-detail="fine" x="612.8" y="398.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">High SNR</text>
+          <text data-node-label="" data-detail-anchor="" x="618.4" y="364.8" class="t-primary" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 3 步：精简段落文字</text>
+          <text data-detail="context" x="618.4" y="382.4" class="t-muted" font-size="9.5" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">删掉冗长修饰，改为加粗短语</text>
+        <text data-detail="fine" x="618.4" y="398.8" class="t-frontend" font-size="11.5" text-anchor="middle" fill="rgb(8, 145, 178)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">文字提炼</text>
         </g>
 
-        <g id="node-node_intent_tag" data-node-id="node_intent_tag" data-node-label="工序 4: 语义意图标注" data-node-kind="cloud" data-node-sublabel="注入 &lt;!-- intention: ... --&gt;" data-node-tag="Semantic Hint" data-node-context="信噪比重构轨 (High-SNR Distill Track) › 核心提炼与节拍引擎 › 阶段三：段落重写与意图">
-          <title>工序 4: 语义意图标注 · 注入 &lt;!-- intention: ... --&gt; · 信噪比重构轨 (High-SNR Distill Track) › 核心提炼与节拍引擎 › 阶段三：段落重写与意图 · Semantic Hint</title>
-          <rect x="758.4" y="343" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
-          <rect x="758.4" y="343" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:4" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
+        <g id="node-node_intent_tag" data-node-id="node_intent_tag" data-node-label="第 4 步：标注排版意图" data-node-kind="cloud" data-node-sublabel="标明对比、代码或重点提示" data-node-tag="意图标注" data-node-context="文字精炼轨 (Text Refinement Track) › 核心提炼与节奏处理 › 第 3 阶段：文字精炼与意图">
+          <title>第 4 步：标注排版意图 · 标明对比、代码或重点提示 · 文字精炼轨 (Text Refinement Track) › 核心提炼与节奏处理 › 第 3 阶段：文字精炼与意图 · 意图标注</title>
+          <rect x="764" y="343" width="140" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="764" y="343" width="140" height="68" rx="6" class="c-cloud" data-animate="node" style="--step:4" stroke-width="1.5px" fill="rgba(251, 191, 36, 0.18)" stroke="rgb(217, 119, 6)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="828.4" y="364.8" class="t-primary" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">工序 4: 语义意图标注</text>
-          <text data-detail="context" x="828.4" y="382.4" class="t-muted" font-size="9.8" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">注入 &lt;!-- intention: ... --&gt;</text>
-        <text data-detail="fine" x="828.4" y="398.8" class="t-cloud" font-size="11.5" text-anchor="middle" fill="rgb(217, 119, 6)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">Semantic Hint</text>
+          <text data-node-label="" data-detail-anchor="" x="834" y="364.8" class="t-primary" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 4 步：标注排版意图</text>
+          <text data-detail="context" x="834" y="382.4" class="t-muted" font-size="10.3" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">标明对比、代码或重点提示</text>
+        <text data-detail="fine" x="834" y="398.8" class="t-cloud" font-size="11.5" text-anchor="middle" fill="rgb(217, 119, 6)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">意图标注</text>
         </g>
 
-        <g id="node-node_contract_deliver" data-node-id="node_contract_deliver" data-node-label="工序 5: 契约校验交付" data-node-kind="security" data-node-sublabel="单页&lt;=180字 / 零HTML交付" data-node-tag=".raw_draft.md" data-node-context="契约门禁轨 (Quality Contract Track) › 阶段四：契约核验与交付">
-          <title>工序 5: 契约校验交付 · 单页&lt;=180字 / 零HTML交付 · 契约门禁轨 (Quality Contract Track) › 阶段四：契约核验与交付 · .raw_draft.md</title>
-          <rect x="873.4" y="470" width="150" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
-          <rect x="873.4" y="470" width="150" height="68" rx="6" class="c-security" data-animate="node" style="--step:5" stroke-width="1.5px" fill="rgba(251, 113, 133, 0.15)" stroke="rgb(225, 29, 72)"/>
+        <g id="node-node_contract_deliver" data-node-id="node_contract_deliver" data-node-label="第 5 步：检查与交付" data-node-kind="security" data-node-sublabel="单页在180字以内，不写HTML" data-node-tag=".raw_draft.md" data-node-context="质量检查轨 (Quality Check Track) › 第 4 阶段：质量检查与交付">
+          <title>第 5 步：检查与交付 · 单页在180字以内，不写HTML · 质量检查轨 (Quality Check Track) › 第 4 阶段：质量检查与交付 · .raw_draft.md</title>
+          <rect x="879" y="470" width="150" height="68" rx="6" class="c-mask" fill="rgb(255, 255, 255)" stroke="none"/>
+          <rect x="879" y="470" width="150" height="68" rx="6" class="c-security" data-animate="node" style="--step:5" stroke-width="1.5px" fill="rgba(251, 113, 133, 0.15)" stroke="rgb(225, 29, 72)"/>
           
-          <text data-node-label="" data-detail-anchor="" x="948.4" y="491.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">工序 5: 契约校验交付</text>
-          <text data-detail="context" x="948.4" y="509.4" class="t-muted" font-size="10.4" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">单页&lt;=180字 / 零HTML交付</text>
-        <text data-detail="fine" x="948.4" y="525.8" class="t-security" font-size="11.5" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">.raw_draft.md</text>
+          <text data-node-label="" data-detail-anchor="" x="954" y="491.8" class="t-primary" font-size="13.5" font-weight="700" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif">第 5 步：检查与交付</text>
+          <text data-detail="context" x="954" y="509.4" class="t-muted" font-size="9.9" text-anchor="middle" fill="rgb(30, 41, 59)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="600">单页在180字以内，不写HTML</text>
+        <text data-detail="fine" x="954" y="525.8" class="t-security" font-size="11.5" text-anchor="middle" fill="rgb(225, 29, 72)" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">.raw_draft.md</text>
         </g>
 
         <!-- Edge labels -->
-        <g data-detail="context" data-edge-from="node_ast_parse" data-edge-to="node_beat_slice" data-edge-label="话题切片划分" data-edge-key="0" data-edge-id="e_ast_beat">
-          <rect x="346.6" y="273.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
-          <text x="393.6" y="290" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">话题切片划分</text>
+        <g data-detail="context" data-edge-from="node_ast_parse" data-edge-to="node_beat_slice" data-edge-label="划分演说章节" data-edge-key="0" data-edge-id="e_ast_beat">
+          <rect x="346.6" y="273.3" width="94.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="393.6" y="290" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">划分演说章节</text>
         </g>
-        <g data-detail="context" data-edge-from="node_beat_slice" data-edge-to="node_text_rewrite" data-edge-label="单页要点精炼" data-edge-key="1" data-edge-id="e_beat_rew">
-          <rect x="521.2" y="219.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
-          <text x="568.2" y="236" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">单页要点精炼</text>
+        <g data-detail="context" data-edge-from="node_beat_slice" data-edge-to="node_text_rewrite" data-edge-label="按页精简文字" data-edge-key="1" data-edge-id="e_beat_rew">
+          <rect x="524.0" y="219.3" width="94.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="571" y="236" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">按页精简文字</text>
         </g>
-        <g data-detail="context" data-edge-from="node_raw_in" data-edge-to="node_ast_parse" data-edge-label="层级骨架抽取" data-edge-key="2" data-edge-id="e_raw_ast">
-          <rect x="178.8" y="93.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
-          <text x="225.8" y="110" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">层级骨架抽取</text>
+        <g data-detail="context" data-edge-from="node_raw_in" data-edge-to="node_ast_parse" data-edge-label="抽取大纲层级" data-edge-key="2" data-edge-id="e_raw_ast">
+          <rect x="178.8" y="93.3" width="94.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="225.8" y="110" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">抽取大纲层级</text>
         </g>
-        <g data-detail="context" data-edge-from="node_text_rewrite" data-edge-to="node_intent_tag" data-edge-label="演说原型匹配" data-edge-key="3" data-edge-id="e_rew_tag">
-          <rect x="673.6" y="350.9" width="94.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
-          <text x="720.5999999999999" y="367" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">演说原型匹配</text>
+        <g data-detail="context" data-edge-from="node_text_rewrite" data-edge-to="node_intent_tag" data-edge-label="匹配展示场景" data-edge-key="3" data-edge-id="e_rew_tag">
+          <rect x="679.2" y="350.3" width="94.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="726.2" y="367" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">匹配展示场景</text>
         </g>
-        <g data-detail="context" data-edge-from="node_intent_tag" data-edge-to="node_contract_deliver" data-edge-label="硬预算审计与交付" data-edge-key="4" data-edge-id="e_tag_deliver">
-          <rect x="828.4" y="531.9" width="120.0" height="24.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
-          <text x="888.4" y="548" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">硬预算审计与交付</text>
+        <g data-detail="context" data-edge-from="node_intent_tag" data-edge-to="node_contract_deliver" data-edge-label="核验容量并输出" data-edge-key="4" data-edge-id="e_tag_deliver">
+          <rect x="840.5" y="531.3" width="107.0" height="25.0" rx="3.5" class="c-mask" fill="rgba(226, 232, 240, 0.65)" stroke="rgba(148, 163, 184, 0.55)" stroke-width="0.8px"/>
+          <text x="894" y="548" class="t-muted" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-family="PingFang SC, &quot;Microsoft YaHei&quot;, Arial, sans-serif" font-weight="700">核验容量并输出</text>
         </g>
 
         <!-- Legend -->

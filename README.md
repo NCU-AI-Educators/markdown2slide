@@ -76,13 +76,13 @@
 ═════════════════════╪═════════════════════════════════════════
                      │
                      ▼
-       [ 终极交付：高审美、自适应留白的精美 Marp 演示母本 ]
+       [ 交付成品：高审美、自适应留白的精美 Marp 演示文稿 ]
 ```
 
-- **全景编译流水线架构图**：详见 [docs/figures/slide_adaptive_pipeline.clean.svg](./docs/figures/slide_adaptive_pipeline.clean.svg)
-- **Stage 1 认知重构工序图**：详见 [docs/figures/distiller_pipeline_workflow.clean.svg](./docs/figures/distiller_pipeline_workflow.clean.svg)
-- **RST 篇章逻辑解构模型**：详见 [docs/figures/distiller_rst_discourse_tree.clean.svg](./docs/figures/distiller_rst_discourse_tree.clean.svg)
-- **Stage 2 闭环自愈状态机**：详见 [docs/figures/slide_loop_controller.clean.svg](./docs/figures/slide_loop_controller.clean.svg)
+- **全景编译流水线架构说明**：详见 [Stage 2 自适应排版规范说明书](./docs/content_adaptive_slide_pipeline_design.md#3-后处理排版智能体slide-layout-agent系统架构)
+- **自愈状态机算法模型**：详见 [Stage 2 自适应排版规范说明书](./docs/content_adaptive_slide_pipeline_design.md#4-loop-工程排版闭环控制算法与熔断机制)
+- **Stage 1 提炼重构工序**：详见 [Stage 1 长文提炼与节拍规范说明书](./docs/longform_to_slide_distiller_agent_design.md#4-长文到演示文本的重构工序-information-distillation-pipeline)
+- **RST 篇章要点拆解模型**：详见 [Stage 1 长文提炼与节拍规范说明书](./docs/longform_to_slide_distiller_agent_design.md#2-篇章修辞结构分析与论据逻辑树-discourse-parsing--rst)
 
 ---
 
